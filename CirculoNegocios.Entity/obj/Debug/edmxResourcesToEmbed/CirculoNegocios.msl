@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="CirculoNegocioModelStoreContainer" CdmEntityContainer="CirculoNegocioEntities">
+    <EntitySetMapping Name="tbCategoriaClientes">
+      <EntityTypeMapping TypeName="CirculoNegocioModel.tbCategoriaCliente">
+        <MappingFragment StoreEntitySet="tbCategoriaCliente">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="Nome" ColumnName="Nome" />
+          <ScalarProperty Name="DataInsercao" ColumnName="DataInsercao" />
+          <ScalarProperty Name="responsavelInsercao" ColumnName="responsavelInsercao" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbClientes">
+      <EntityTypeMapping TypeName="CirculoNegocioModel.tbCliente">
+        <MappingFragment StoreEntitySet="tbClientes">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="razaoSocial" ColumnName="razaoSocial" />
+          <ScalarProperty Name="nomeFantasia" ColumnName="nomeFantasia" />
+          <ScalarProperty Name="nome" ColumnName="nome" />
+          <ScalarProperty Name="cpfCnpj" ColumnName="cpfCnpj" />
+          <ScalarProperty Name="inscricaoEstadual" ColumnName="inscricaoEstadual" />
+          <ScalarProperty Name="contatoResponsavel" ColumnName="contatoResponsavel" />
+          <ScalarProperty Name="endereco" ColumnName="endereco" />
+          <ScalarProperty Name="cidade" ColumnName="cidade" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+          <ScalarProperty Name="cep" ColumnName="cep" />
+          <ScalarProperty Name="complemento" ColumnName="complemento" />
+          <ScalarProperty Name="telefone1" ColumnName="telefone1" />
+          <ScalarProperty Name="telefone2" ColumnName="telefone2" />
+          <ScalarProperty Name="idCategoriaCliente" ColumnName="idCategoriaCliente" />
+          <ScalarProperty Name="servicos" ColumnName="servicos" />
+          <ScalarProperty Name="Funcionamento" ColumnName="Funcionamento" />
+          <ScalarProperty Name="observacoes" ColumnName="observacoes" />
+          <ScalarProperty Name="ativo" ColumnName="ativo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

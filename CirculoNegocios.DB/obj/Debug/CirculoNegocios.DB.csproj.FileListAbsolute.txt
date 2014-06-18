@@ -1,0 +1,6 @@
+C:\Users\Tiago\Documents\GitHub\Projeto_CirculoNegocios\CirculoNegocios.DB\bin\Debug\CirculoNegocios.DB.dll.config
+C:\Users\Tiago\Documents\GitHub\Projeto_CirculoNegocios\CirculoNegocios.DB\bin\Debug\CirculoNegocios.DB.dll
+C:\Users\Tiago\Documents\GitHub\Projeto_CirculoNegocios\CirculoNegocios.DB\bin\Debug\CirculoNegocios.DB.pdb
+C:\Users\Tiago\Documents\GitHub\Projeto_CirculoNegocios\CirculoNegocios.DB\obj\Debug\CirculoNegocios.DB.dll
+C:\Users\Tiago\Documents\GitHub\Projeto_CirculoNegocios\CirculoNegocios.DB\obj\Debug\CirculoNegocios.DB.pdb
+C:\Users\Tiago\Documents\GitHub\Projeto_CirculoNegocios\CirculoNegocios.DB\obj\Debug\CirculoNegocios.DB.csprojResolveAssemblyReference.cache

@@ -1,0 +1,4 @@
+D:\Projetos\CirculoNegocios\CirculoNegociosWeb\CirculoNegociosWeb\bin\CirculoNegocios.Web.dll
+D:\Projetos\CirculoNegocios\CirculoNegociosWeb\CirculoNegociosWeb\bin\CirculoNegocios.Web.pdb
+D:\Projetos\CirculoNegocios\CirculoNegociosWeb\CirculoNegociosWeb\obj\Debug\CirculoNegocios.Web.dll
+D:\Projetos\CirculoNegocios\CirculoNegociosWeb\CirculoNegociosWeb\obj\Debug\CirculoNegocios.Web.pdb

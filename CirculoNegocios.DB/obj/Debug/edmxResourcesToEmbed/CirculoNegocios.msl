@@ -1,0 +1,177 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="CirculoNegocioModelStoreContainer" CdmEntityContainer="CirculoNegocioEntities">
+    <EntitySetMapping Name="tbBanners">
+      <EntityTypeMapping TypeName="CirculoNegocioModel.tbBanner">
+        <MappingFragment StoreEntitySet="tbBanner">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="idTipoBanner" ColumnName="idTipoBanner" />
+          <ScalarProperty Name="imagemFilePath" ColumnName="imagemFilePath" />
+          <ScalarProperty Name="idCliente" ColumnName="idCliente" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+          <ScalarProperty Name="dataDe" ColumnName="dataDe" />
+          <ScalarProperty Name="dataAte" ColumnName="dataAte" />
+          <ScalarProperty Name="Ativo" ColumnName="Ativo" />
+          <ScalarProperty Name="DataUltimaAlteracao" ColumnName="DataUltimaAlteracao" />
+          <ScalarProperty Name="responsavelUltimaAlteracao" ColumnName="responsavelUltimaAlteracao" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbBannerPrincipals">
+      <EntityTypeMapping TypeName="CirculoNegocioModel.tbBannerPrincipal">
+        <MappingFragment StoreEntitySet="tbBannerPrincipal">
+          <ScalarProperty Name="Rodape2" ColumnName="Rodape2" />
+          <ScalarProperty Name="Rodape1" ColumnName="Rodape1" />
+          <ScalarProperty Name="Descricao" ColumnName="Descricao" />
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="imagemFilePath" ColumnName="imagemFilePath" />
+          <ScalarProperty Name="idCliente" ColumnName="idCliente" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+          <ScalarProperty Name="dataDe" ColumnName="dataDe" />
+          <ScalarProperty Name="dataAte" ColumnName="dataAte" />
+          <ScalarProperty Name="Ativo" ColumnName="Ativo" />
+          <ScalarProperty Name="DataUltimaAlteracao" ColumnName="DataUltimaAlteracao" />
+          <ScalarProperty Name="responsavelUltimaAlteracao" ColumnName="responsavelUltimaAlteracao" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbCategoriaClientes">
+      <EntityTypeMapping TypeName="CirculoNegocioModel.tbCategoriaCliente">
+        <MappingFragment StoreEntitySet="tbCategoriaCliente">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="Nome" ColumnName="Nome" />
+          <ScalarProperty Name="DataUltimaAlteracao" ColumnName="DataUltimaAlteracao" />
+          <ScalarProperty Name="responsavelUltimaAlteracao" ColumnName="responsavelUltimaAlteracao" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbCategoriaNoticias">
+      <EntityTypeMapping TypeName="CirculoNegocioModel.tbCategoriaNoticia">
+        <MappingFragment StoreEntitySet="tbCategoriaNoticia">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="Nome" ColumnName="Nome" />
+          <ScalarProperty Name="DataUltimaAlteracao" ColumnName="DataUltimaAlteracao" />
+          <ScalarProperty Name="responsavelUltimaAlteracao" ColumnName="responsavelUltimaAlteracao" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbClientes">
+      <EntityTypeMapping TypeName="CirculoNegocioModel.tbCliente">
+        <MappingFragment StoreEntitySet="tbClientes">
+          <ScalarProperty Name="idSubCategoriaCliente" ColumnName="idSubCategoriaCliente" />
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="razaoSocial" ColumnName="razaoSocial" />
+          <ScalarProperty Name="nomeFantasia" ColumnName="nomeFantasia" />
+          <ScalarProperty Name="nome" ColumnName="nome" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="cpfCnpj" ColumnName="cpfCnpj" />
+          <ScalarProperty Name="inscricaoEstadual" ColumnName="inscricaoEstadual" />
+          <ScalarProperty Name="contatoResponsavel" ColumnName="contatoResponsavel" />
+          <ScalarProperty Name="endereco" ColumnName="endereco" />
+          <ScalarProperty Name="cidade" ColumnName="cidade" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+          <ScalarProperty Name="cep" ColumnName="cep" />
+          <ScalarProperty Name="complemento" ColumnName="complemento" />
+          <ScalarProperty Name="telefone1" ColumnName="telefone1" />
+          <ScalarProperty Name="telefone2" ColumnName="telefone2" />
+          <ScalarProperty Name="site" ColumnName="site" />
+          <ScalarProperty Name="idCategoriaCliente" ColumnName="idCategoriaCliente" />
+          <ScalarProperty Name="servicos" ColumnName="servicos" />
+          <ScalarProperty Name="Funcionamento" ColumnName="Funcionamento" />
+          <ScalarProperty Name="observacoes" ColumnName="observacoes" />
+          <ScalarProperty Name="anexoImagem1Path" ColumnName="anexoImagem1Path" />
+          <ScalarProperty Name="anexoImagem2Path" ColumnName="anexoImagem2Path" />
+          <ScalarProperty Name="anexoImagem3Path" ColumnName="anexoImagem3Path" />
+          <ScalarProperty Name="anexoLogoPath" ColumnName="anexoLogoPath" />
+          <ScalarProperty Name="ativo" ColumnName="ativo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbEstados">
+      <EntityTypeMapping TypeName="CirculoNegocioModel.tbEstado">
+        <MappingFragment StoreEntitySet="tbEstados">
+          <ScalarProperty Name="sigla" ColumnName="sigla" />
+          <ScalarProperty Name="nome" ColumnName="nome" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbFilePathNoticias">
+      <EntityTypeMapping TypeName="CirculoNegocioModel.tbFilePathNoticia">
+        <MappingFragment StoreEntitySet="tbFilePathNoticias">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="idNoticia" ColumnName="idNoticia" />
+          <ScalarProperty Name="filePath" ColumnName="filePath" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbNoticias">
+      <EntityTypeMapping TypeName="CirculoNegocioModel.tbNoticia">
+        <MappingFragment StoreEntitySet="tbNoticias">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="titulo" ColumnName="titulo" />
+          <ScalarProperty Name="Sinopse" ColumnName="Sinopse" />
+          <ScalarProperty Name="Descricao" ColumnName="Descricao" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+          <ScalarProperty Name="idCategoria" ColumnName="idCategoria" />
+          <ScalarProperty Name="dataHoraDe" ColumnName="dataHoraDe" />
+          <ScalarProperty Name="dataHoraAte" ColumnName="dataHoraAte" />
+          <ScalarProperty Name="responsavelInsercao" ColumnName="responsavelInsercao" />
+          <ScalarProperty Name="filePathImagens" ColumnName="filePathImagens" />
+          <ScalarProperty Name="Ativo" ColumnName="Ativo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbTipoBanners">
+      <EntityTypeMapping TypeName="CirculoNegocioModel.tbTipoBanner">
+        <MappingFragment StoreEntitySet="tbTipoBanner">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="Nome" ColumnName="Nome" />
+          <ScalarProperty Name="DataUltimaAlteracao" ColumnName="DataUltimaAlteracao" />
+          <ScalarProperty Name="responsavelUltimaAlteracao" ColumnName="responsavelUltimaAlteracao" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbOfertas">
+      <EntityTypeMapping TypeName="CirculoNegocioModel.tbOferta">
+        <MappingFragment StoreEntitySet="tbOfertas">
+          <ScalarProperty Name="dataUltimaAlteracao" ColumnName="dataUltimaAlteracao" />
+          <ScalarProperty Name="responsavelUltimaAlteracao" ColumnName="responsavelUltimaAlteracao" />
+          <ScalarProperty Name="dataAte" ColumnName="dataAte" />
+          <ScalarProperty Name="dataDe" ColumnName="dataDe" />
+          <ScalarProperty Name="link" ColumnName="link" />
+          <ScalarProperty Name="imagemFilePath" ColumnName="imagemFilePath" />
+          <ScalarProperty Name="descricao" ColumnName="descricao" />
+          <ScalarProperty Name="titulo" ColumnName="titulo" />
+          <ScalarProperty Name="idCliente" ColumnName="idCliente" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbPromocaos">
+      <EntityTypeMapping TypeName="CirculoNegocioModel.tbPromocao">
+        <MappingFragment StoreEntitySet="tbPromocoes">
+          <ScalarProperty Name="dataUltimaAlteracao" ColumnName="dataUltimaAlteracao" />
+          <ScalarProperty Name="responsavelUltimaAlteracao" ColumnName="responsavelUltimaAlteracao" />
+          <ScalarProperty Name="dataAte" ColumnName="dataAte" />
+          <ScalarProperty Name="dataDe" ColumnName="dataDe" />
+          <ScalarProperty Name="link" ColumnName="link" />
+          <ScalarProperty Name="imagemFilePath" ColumnName="imagemFilePath" />
+          <ScalarProperty Name="titulo" ColumnName="titulo" />
+          <ScalarProperty Name="idCliente" ColumnName="idCliente" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbSubCategoriaClientes">
+      <EntityTypeMapping TypeName="CirculoNegocioModel.tbSubCategoriaCliente">
+        <MappingFragment StoreEntitySet="tbSubCategoriaCliente">
+          <ScalarProperty Name="responsavelUltimaAlteracao" ColumnName="responsavelUltimaAlteracao" />
+          <ScalarProperty Name="DataUltimaAlteracao" ColumnName="DataUltimaAlteracao" />
+          <ScalarProperty Name="Nome" ColumnName="Nome" />
+          <ScalarProperty Name="idCategoria" ColumnName="idCategoria" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

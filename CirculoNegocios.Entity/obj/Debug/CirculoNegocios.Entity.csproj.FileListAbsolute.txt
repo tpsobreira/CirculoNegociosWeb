@@ -1,0 +1,8 @@
+C:\Users\Tiago\Documents\GitHub\Projeto_CirculoNegocios\CirculoNegocios.Entity\bin\Debug\CirculoNegocios.Entity.dll.config
+C:\Users\Tiago\Documents\GitHub\Projeto_CirculoNegocios\CirculoNegocios.Entity\bin\Debug\CirculoNegocios.Entity.dll
+C:\Users\Tiago\Documents\GitHub\Projeto_CirculoNegocios\CirculoNegocios.Entity\bin\Debug\CirculoNegocios.Entity.pdb
+C:\Users\Tiago\Documents\GitHub\Projeto_CirculoNegocios\CirculoNegocios.Entity\obj\Debug\CirculoNegocios.Entity.dll
+C:\Users\Tiago\Documents\GitHub\Projeto_CirculoNegocios\CirculoNegocios.Entity\obj\Debug\CirculoNegocios.Entity.pdb
+C:\Users\Tiago\Documents\GitHub\Projeto_CirculoNegocios\CirculoNegocios.Entity\obj\Debug\CirculoNegocios.Entity.csprojResolveAssemblyReference.cache
+C:\Users\Tiago\Documents\GitHub\Projeto_CirculoNegocios\CirculoNegocios.Entity\bin\Debug\CirculoNegocios.DB.dll
+C:\Users\Tiago\Documents\GitHub\Projeto_CirculoNegocios\CirculoNegocios.Entity\bin\Debug\CirculoNegocios.DB.pdb

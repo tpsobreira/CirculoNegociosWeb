@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="CirculoNegocioModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+  <EntityContainer Name="CirculoNegocioEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="tbCategoriaClientes" EntityType="CirculoNegocioModel.tbCategoriaCliente" />
+    <EntitySet Name="tbClientes" EntityType="CirculoNegocioModel.tbCliente" />
+    <AssociationSet Name="FK__tbCliente__idCat__123EB7A3" Association="CirculoNegocioModel.FK__tbCliente__idCat__123EB7A3">
+      <End Role="tbCategoriaCliente" EntitySet="tbCategoriaClientes" />
+      <End Role="tbClientes" EntitySet="tbClientes" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="tbCategoriaCliente">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nome" Type="String" MaxLength="200" Unicode="false" FixedLength="false" />
+    <Property Name="DataInsercao" Type="DateTime" />
+    <Property Name="responsavelInsercao" Type="String" MaxLength="200" Unicode="false" FixedLength="false" />
+    <NavigationProperty Name="tbClientes" Relationship="CirculoNegocioModel.FK__tbCliente__idCat__123EB7A3" FromRole="tbCategoriaCliente" ToRole="tbClientes" />
+  </EntityType>
+  <EntityType Name="tbCliente">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="razaoSocial" Type="String" MaxLength="1000" Unicode="false" FixedLength="false" />
+    <Property Name="nomeFantasia" Type="String" MaxLength="1000" Unicode="false" FixedLength="false" />
+    <Property Name="nome" Type="String" MaxLength="1000" Unicode="false" FixedLength="false" />
+    <Property Name="cpfCnpj" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="inscricaoEstadual" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+    <Property Name="contatoResponsavel" Type="String" MaxLength="1000" Unicode="false" FixedLength="false" />
+    <Property Name="endereco" Type="String" MaxLength="2000" Unicode="false" FixedLength="false" />
+    <Property Name="cidade" Type="String" MaxLength="500" Unicode="false" FixedLength="false" />
+    <Property Name="estado" Type="String" MaxLength="2" Unicode="false" FixedLength="true" />
+    <Property Name="cep" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+    <Property Name="complemento" Type="String" MaxLength="1000" Unicode="false" FixedLength="false" />
+    <Property Name="telefone1" Type="String" MaxLength="30" Unicode="false" FixedLength="false" />
+    <Property Name="telefone2" Type="String" MaxLength="30" Unicode="false" FixedLength="false" />
+    <Property Name="idCategoriaCliente" Type="Int32" />
+    <Property Name="servicos" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="Funcionamento" Type="String" MaxLength="1000" Unicode="false" FixedLength="false" />
+    <Property Name="observacoes" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+    <Property Name="ativo" Type="Boolean" />
+    <NavigationProperty Name="tbCategoriaCliente" Relationship="CirculoNegocioModel.FK__tbCliente__idCat__123EB7A3" FromRole="tbClientes" ToRole="tbCategoriaCliente" />
+  </EntityType>
+  <Association Name="FK__tbCliente__idCat__123EB7A3">
+    <End Role="tbCategoriaCliente" Type="CirculoNegocioModel.tbCategoriaCliente" Multiplicity="0..1" />
+    <End Role="tbClientes" Type="CirculoNegocioModel.tbCliente" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbCategoriaCliente">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="tbClientes">
+        <PropertyRef Name="idCategoriaCliente" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

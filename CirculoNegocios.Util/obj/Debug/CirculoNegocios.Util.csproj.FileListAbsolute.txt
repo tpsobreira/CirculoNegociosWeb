@@ -1,0 +1,8 @@
+D:\Projetos\CirculoNegocios\CirculoNegocios\CirculoNegocios.Util\bin\Debug\CirculoNegocios.Util.dll
+D:\Projetos\CirculoNegocios\CirculoNegocios\CirculoNegocios.Util\bin\Debug\CirculoNegocios.Util.pdb
+D:\Projetos\CirculoNegocios\CirculoNegocios\CirculoNegocios.Util\obj\Debug\CirculoNegocios.Util.dll
+D:\Projetos\CirculoNegocios\CirculoNegocios\CirculoNegocios.Util\obj\Debug\CirculoNegocios.Util.pdb
+C:\Users\Tiago\Documents\GitHub\Projeto_CirculoNegocios\CirculoNegocios.Util\bin\Debug\CirculoNegocios.Util.dll
+C:\Users\Tiago\Documents\GitHub\Projeto_CirculoNegocios\CirculoNegocios.Util\bin\Debug\CirculoNegocios.Util.pdb
+C:\Users\Tiago\Documents\GitHub\Projeto_CirculoNegocios\CirculoNegocios.Util\obj\Debug\CirculoNegocios.Util.dll
+C:\Users\Tiago\Documents\GitHub\Projeto_CirculoNegocios\CirculoNegocios.Util\obj\Debug\CirculoNegocios.Util.pdb

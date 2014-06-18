@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="CirculoNegocioModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityContainer Name="CirculoNegocioModelStoreContainer">
+    <EntitySet Name="tbCategoriaCliente" EntityType="CirculoNegocioModel.Store.tbCategoriaCliente" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tbClientes" EntityType="CirculoNegocioModel.Store.tbClientes" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="FK__tbCliente__idCat__123EB7A3" Association="CirculoNegocioModel.Store.FK__tbCliente__idCat__123EB7A3">
+      <End Role="tbCategoriaCliente" EntitySet="tbCategoriaCliente" />
+      <End Role="tbClientes" EntitySet="tbClientes" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="tbCategoriaCliente">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Nome" Type="varchar" MaxLength="200" />
+    <Property Name="DataInsercao" Type="datetime" />
+    <Property Name="responsavelInsercao" Type="varchar" MaxLength="200" />
+  </EntityType>
+  <EntityType Name="tbClientes">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="razaoSocial" Type="varchar" MaxLength="1000" />
+    <Property Name="nomeFantasia" Type="varchar" MaxLength="1000" />
+    <Property Name="nome" Type="varchar" MaxLength="1000" />
+    <Property Name="cpfCnpj" Type="varchar" MaxLength="50" />
+    <Property Name="inscricaoEstadual" Type="varchar" MaxLength="50" />
+    <Property Name="contatoResponsavel" Type="varchar" MaxLength="1000" />
+    <Property Name="endereco" Type="varchar" MaxLength="2000" />
+    <Property Name="cidade" Type="varchar" MaxLength="500" />
+    <Property Name="estado" Type="char" MaxLength="2" />
+    <Property Name="cep" Type="varchar" MaxLength="20" />
+    <Property Name="complemento" Type="varchar" MaxLength="1000" />
+    <Property Name="telefone1" Type="varchar" MaxLength="30" />
+    <Property Name="telefone2" Type="varchar" MaxLength="30" />
+    <Property Name="idCategoriaCliente" Type="int" />
+    <Property Name="servicos" Type="varchar(max)" />
+    <Property Name="Funcionamento" Type="varchar" MaxLength="1000" />
+    <Property Name="observacoes" Type="varchar(max)" />
+    <Property Name="ativo" Type="bit" />
+  </EntityType>
+  <Association Name="FK__tbCliente__idCat__123EB7A3">
+    <End Role="tbCategoriaCliente" Type="CirculoNegocioModel.Store.tbCategoriaCliente" Multiplicity="0..1" />
+    <End Role="tbClientes" Type="CirculoNegocioModel.Store.tbClientes" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbCategoriaCliente">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="tbClientes">
+        <PropertyRef Name="idCategoriaCliente" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>
