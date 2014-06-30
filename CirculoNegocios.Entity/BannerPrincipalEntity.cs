@@ -9,5 +9,8 @@ namespace CirculoNegocios.Entity
     public class BannerPrincipalEntity : tbBannerPrincipal
     {
         public string nomeCliente { get; set; }
+        public string ClassCssItem { get; set; }
+        public string ClassCssCabecalho { get; set; }
+        public int Enum { get; set; }
     }
 }

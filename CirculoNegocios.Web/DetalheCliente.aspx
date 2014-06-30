@@ -80,19 +80,20 @@
             <div class="col-md-12 column">
                 <div class="page-header">
                     <h1>
-                        Cartucho Agora <small>- Especializada em tintas para impressão</small></h1>
+                        <asp:Literal ID="litNomeCliente" runat="server"></asp:Literal><small><asp:Literal
+                            ID="litSubTitulo" runat="server"></asp:Literal></small></h1>
                 </div>
                 <div class="row clearfix">
                     <div class="col-md-2 column" style="text-align: center; margin-top: 60px;">
-                        <img src="img/logoCustom.png" />
+                        <asp:Image ID="imgCliente" runat="server" />
                     </div>
                     <div class="col-md-10 column">
                         <div class="jumbotron well" style="background-color: #ea9355; color: #ffffff; border-color: #db6613">
                             <h1>
                                 Quem somos?</h1>
                             <p>
-                                Somos uma empresa especializada em tintas para impresão e que foca atender seus
-                                clientes de forma planejada e totalmente personalizada.
+                                <asp:Literal ID="litQuemSomos"
+                                    runat="server"></asp:Literal>
                             </p>
                         </div>
                     </div>
@@ -103,23 +104,33 @@
                             <h2 class="text-danger">
                                 Serviços</h2>
                             <ul style="margin-left: 20px">
-                                <li>Impressões e cópias</li>
-                                <li>Carimbos em geral</li>
+                                <asp:Repeater ID="rptServicos" runat="server">
+                                    <HeaderTemplate></HeaderTemplate>
+                                    <ItemTemplate>
+                                        <li>
+                                            <asp:Literal ID="litServicos" runat="server" Text='<%# Container.DataItem%>'></asp:Literal></li>    
+                                    </ItemTemplate>
+                                </asp:Repeater>
+                                
+                                <%--<li>Carimbos em geral</li>
                                 <li>Cartuchos e toners compativeis e recargas</li>
                                 <li>Cartões de visita e folders-Manutenção de impressão em geral</li>
-                                <li>Instalação de Bulk lnk</li>
+                                <li>Instalação de Bulk lnk</li>--%>
+
                             </ul>
                             <br />
                             <h2 class="text-danger">
                                 Contato</h2>
                             <address contenteditable="true">
-                                <strong>Cartucho Agora</strong><br />
-                                Email: <a>cartuchoagora@hotmail.com</a><br />
-                                Avenida Jabaquara, 760 Loja 57-58<br />
-                                Cep: 04046-100<br />
-                                Telefone: +55 11 2275-6186<br />
-                                Funcionamento: De segunda a sexta das 9:30 às 19:30<br />
-                                Sábado das 9:30 às 18:00<br />
+                                <strong>
+                                    <asp:Literal ID="litNomeEmpresa" runat="server"></asp:Literal></strong><br />
+                                Email: <a>
+                                    <asp:Literal ID="litEmail" runat="server"></asp:Literal></a><br />
+                                Endereço: <asp:Literal ID="litEndereco" runat="server"></asp:Literal><br />
+                                Cep: <asp:Literal ID="litCep" runat="server"></asp:Literal><br />
+                                Telefone: <asp:Literal ID="litTelefone" runat="server"></asp:Literal><br />
+                                Funcionamento: De segunda a sexta das <asp:Literal ID="litHoraInicioSemana" runat="server"></asp:Literal> às <asp:Literal ID="litHoraFimSemana" runat="server"></asp:Literal><br />
+                                Sábado das <asp:Literal ID="litHoraInicioFds" runat="server"></asp:Literal> às <asp:Literal ID="litHoraFimFds" runat="server"></asp:Literal><br />
                             </address>
                         </div>
                         <div class="col-md-8 column">
@@ -131,13 +142,13 @@
                                 </ol>
                                 <div class="carousel-inner">
                                     <div class="item active">
-                                        <img alt="" src="http://lorempixel.com/1600/500/sports/1">
+                                        <asp:Image ID="ImgCliente1" runat="server" />
                                     </div>
                                     <div class="item">
-                                        <img alt="" src="http://lorempixel.com/1600/500/sports/2">
+                                        <asp:Image ID="ImgCliente2" runat="server" />
                                     </div>
                                     <div class="item">
-                                        <img alt="" src="http://lorempixel.com/1600/500/sports/3">
+                                        <asp:Image ID="ImgCliente3" runat="server" />
                                     </div>
                                 </div>
                                 <a class="left carousel-control" href="#carousel-970968" data-slide="prev"><span

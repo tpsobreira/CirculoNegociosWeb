@@ -11,9 +11,9 @@ namespace CirculoNegocios.Business
     {
         NoticiaDAL lObjNoticiaDAL = new NoticiaDAL();
 
-        public List<NoticiaEntity> ConsultaNoticiasAtivosByCategoria(int idCategoria)
+        public List<NoticiaEntity> ConsultaNoticiasAtivosByCategoria(int idCategoria, string estado)
         {
-            return lObjNoticiaDAL.ConsultaNoticiasAtivosByCategoria(idCategoria);
+            return lObjNoticiaDAL.ConsultaNoticiasAtivosByCategoria(idCategoria, estado);
         }
     }
 }

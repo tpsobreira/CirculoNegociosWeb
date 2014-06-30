@@ -12,6 +12,7 @@ namespace CirculoNegocios.Web
     public partial class Busca : System.Web.UI.Page
     {
         ClienteBusiness clienteBusiness = new ClienteBusiness();
+        BuscaBusiness buscaBusiness = new BuscaBusiness();
 
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -21,10 +22,20 @@ namespace CirculoNegocios.Web
             }
         }
 
-        private void PreencheBreadCrumb(string Categoria, string Estado)
+        private void PreencheBreadCrumb(int idCategoria, string nomeCategoria, string Estado)
         {
             litEstadoBusca.Text = Estado;
-            litCategoriaBusca.Text = Categoria;
+            litCategoriaBusca.Text = nomeCategoria;
+
+            ddlCidadeFiltro.DataSource = buscaBusiness.ListaCidadesByCategoria(idCategoria);
+            ddlCidadeFiltro.DataBind();
+            ddlCidadeFiltro.Items.Insert(0, "Filtre aqui por cidade...");
+
+            ddlSubCategoriaFiltro.DataSource = new SubCategoriaClienteBusiness().ConsultaSubCategoriasClientebyCategoriaPai(idCategoria);
+            ddlSubCategoriaFiltro.DataValueField = "id";
+            ddlSubCategoriaFiltro.DataTextField = "Nome";
+            ddlSubCategoriaFiltro.DataBind();
+            ddlSubCategoriaFiltro.Items.Insert(0, "Filtre aqui por Sub-Categoria...");
         }
 
         public int PaginaAtual //Propriedade da página atual, colocada no viewstate
@@ -71,7 +82,7 @@ namespace CirculoNegocios.Web
                 rptResultado.DataSource = Pgs;
                 rptResultado.DataBind();
 
-                PreencheBreadCrumb(lstClintes[0].nomeCategoria, lstClintes[0].estado);
+                PreencheBreadCrumb(Convert.ToInt32(lstClintes[0].idCategoriaCliente), lstClintes[0].nomeCategoria, lstClintes[0].estado);
             }
         }
 

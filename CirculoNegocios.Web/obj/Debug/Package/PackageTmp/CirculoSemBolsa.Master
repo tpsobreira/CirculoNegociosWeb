@@ -1,0 +1,123 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="CirculoSemBolsa.master.cs"
+    Inherits="CirculoNegocios.Web.CirculoSemBolsa" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta charset="utf-8">
+    <title>Círculo de Negócios</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="n/a">
+    <meta name="author" content="Marcio Coutinho">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+  <![endif]-->
+    <!-- Fav and touch icons -->
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/scripts.js"></script>
+    <script>
+        function timer() {
+            var d = new Date();
+            var mydate = new Date()
+            var year = mydate.getYear()
+            if (year < 2000)
+                year += (year < 1900) ? 1900 : 0
+            var day = mydate.getDay()
+            var month = mydate.getMonth()
+            var daym = mydate.getDate()
+            if (daym < 10)
+                daym = "0" + daym
+            var dayarray = new Array("Domingo", "Segunda-feira", "Terça-feira", "Quarta-feira", "Quinta-feira", "Sexta-feira", "Sábado")
+            var montharray = new Array(" de Janeiro de ", " de Fevereiro de ", " de Março de ", "de Abril de ", "de Maio de ", "de Junho de", "de Julho de ", "de Agosto de ", "de Setembro de ", " de Outubro de ", " de Novembro de ", " de Dezembro de ")
+
+            document.getElementById('date').innerHTML = ("   " + dayarray[day] + ", " + daym + " " + montharray[month] + year + " ").toString();
+        }
+    </script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div class="container">
+        <div class="row clearfix">
+            <div class="col-md-12 column">
+                <div>
+                    <table width="100%">
+                        <tr>
+                            <td>
+                                <img style="margin-top: 40px; margin-bottom: 10px; margin-left: 60px;" class="center-block"
+                                    src="img/logo5.png" alt="logo" />
+                            </td>
+                            <td>
+                                <div style="text-align: end; margin-bottom: 25px; margin-right: 25px;">
+                                    <img src="img/identidade.png" style="width: 20px; height: 20px" />
+                                    <img src="img/facebook.png" />
+                                </div>
+                                <div id="date" class="data">
+                                </div>
+                                <nav class="navbar navbar-default" role="navigation">
+                                    <ul class="nav navbar-nav navbar-left">
+                                        <li style="margin: 15px 0px 0px 10px;">Procuro por:</li>
+                                        <li>
+                                            <form class="navbar-form navbar-left" role="search">
+                                                <div class="form-group">
+                                                    <input type="text" value="Academia, Pizzaria" class="form-control">
+                                                </div>
+                                            </form>
+                                        </li>
+                                        <li style="text-align: center; margin: 15px 0px 0px 0px;">onde</li>
+                                        <li style="text-align: center; margin: 7px 0px 0px 10px;">
+                                            <div class="btn-group">
+                                                <button class="btn btn-default" contenteditable="true">Estado</button>
+                                                <button data-toggle="dropdown" class="btn btn-default dropdown-toggle"><span class="caret"></span></button>
+                                                <ul class="dropdown-menu" contenteditable="true">
+                                                    <li><a href="#">São Paulo</a></li>
+                                                    <li><a href="#">Rio de Janeiro</a></li>
+                                                    <li><a href="#">Minas Gerais</a></li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li style="text-align: center; margin: 7px 10px 0px 10px;">
+                                            <button type="submit" class="btn btn-default">Pesquisar</button></li>
+                                    </ul>
+                                </nav>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <br />
+                <nav class="navbar navbar-default" role="navigation">
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav">
+                            <li><a href="Home.aspx">Home</a></li>
+                            <li><a href="QuemSomos.html">Quem somos</a></li>
+                            <li class="active"><a href="Categorias.html">Categorias</a></li>
+                            <li><a href="AnuncieConosco.html">Anuncie conosco</a></li>
+                            <li><a href="Contato.html">Contato</a></li>
+                        </ul>
+                    </div>
+                </nav>
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+        </div>
+        <div id="footer">
+            <div class="copyright">
+                <i class="sprite-selos sprite-selos-uol logouol">Circulo de Negócios</i> <span class="p1">
+                    © 1996 - 2014 CN - O melhor conteúdo. Todos os direitos reservados <a href="#">Hospedagem
+                        Host</a></span>
+                <div class="bts">
+                    <a href="#" id="btCrimesVirtuais">Crimes virtuais: denuncie</a> <span>|</span> <a
+                        href="#" id="btErratas">Erratas</a> <span>|</span> <a id="btComunicarErro" href="#">
+                            Comunicar erro</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    </form>
+</body>
+</html>

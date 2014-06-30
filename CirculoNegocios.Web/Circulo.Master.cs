@@ -5,6 +5,9 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using CirculoNegocios.Business;
+using System.Net;
+using System.IO;
+using System.Xml;
 
 
 namespace CirculoNegocios.Web
@@ -13,9 +16,13 @@ namespace CirculoNegocios.Web
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            
+
             if (!IsPostBack)
             {
                 PreencheCombos();
+
+                ddlEstado.SelectedValue = Session["UF"].ToString();
             }
         }
 
@@ -31,5 +38,7 @@ namespace CirculoNegocios.Web
         {
             Response.Redirect(string.Format("Busca.aspx?txt={0}&uf={1}", txtBuscaServicos.Text, ddlEstado.SelectedValue));
         }
+
+        
     }
 }

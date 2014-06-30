@@ -65,6 +65,7 @@
     <Content Include="AnuncieConosco.aspx" />
     <Content Include="AnuncieConosco.html" />
     <Content Include="Busca.aspx" />
+    <Content Include="Categorias.aspx" />
     <Content Include="Categorias.html" />
     <Content Include="Contato.aspx" />
     <Content Include="Contato.html" />
@@ -156,6 +157,13 @@
     <Compile Include="Busca.aspx.designer.cs">
       <DependentUpon>Busca.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Categorias.aspx.cs">
+      <DependentUpon>Categorias.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Categorias.aspx.designer.cs">
+      <DependentUpon>Categorias.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Circulo.Master.cs">
       <DependentUpon>Circulo.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -245,7 +253,7 @@
         <WebProjectProperties>
           <UseIIS>False</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>1300</DevelopmentServerPort>
+          <DevelopmentServerPort>1089</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
           <IISUrl>
           </IISUrl>

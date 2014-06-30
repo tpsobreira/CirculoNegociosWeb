@@ -9,7 +9,7 @@ namespace CirculoNegocios.DAL
 {
     public class BannerDAL
     {
-        public List<BannerEntity> ConsultaBannersAtivosByTipo(int idTipoBanner)
+        public List<BannerEntity> ConsultaBannersAtivosByTipo(int idTipoBanner, string estado)
         {
             List<BannerEntity> lstBanner = new List<BannerEntity>();
 
@@ -19,6 +19,7 @@ namespace CirculoNegocios.DAL
                 {
                     var ret = (from p in context.tbBanners where p.idTipoBanner == idTipoBanner && p.dataDe <= DateTime.Now 
                                                                                                 && p.dataAte >= DateTime.Now
+                                                                                                && p.estado == estado
                                                                                                 select p).ToList();
 
                     lstBanner = CastListBanners(ret);

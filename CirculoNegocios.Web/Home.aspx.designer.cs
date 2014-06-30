@@ -40,31 +40,22 @@ namespace CirculoNegocios.Web {
         protected global::System.Web.UI.WebControls.Literal litSinopseNoticiaLateralEsquerda;
         
         /// <summary>
-        /// litDescricaoBannerAtivo control.
+        /// rptCabecalhoBannerPrincipal control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Literal litDescricaoBannerAtivo;
+        protected global::System.Web.UI.WebControls.Repeater rptCabecalhoBannerPrincipal;
         
         /// <summary>
-        /// litRodapeBannerAtivo control.
+        /// rptBannerPrincipal control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Literal litRodapeBannerAtivo;
-        
-        /// <summary>
-        /// litRodape2BannerAtivo control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Literal litRodape2BannerAtivo;
+        protected global::System.Web.UI.WebControls.Repeater rptBannerPrincipal;
         
         /// <summary>
         /// rptDestaqueDia control.

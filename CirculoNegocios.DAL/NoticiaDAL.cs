@@ -9,7 +9,7 @@ namespace CirculoNegocios.DAL
 {
     public class NoticiaDAL
     {
-        public List<NoticiaEntity> ConsultaNoticiasAtivosByCategoria(int idCategoria)
+        public List<NoticiaEntity> ConsultaNoticiasAtivosByCategoria(int idCategoria, string estado)
         {
             List<NoticiaEntity> lstNoticia = new List<NoticiaEntity>();
 
@@ -20,13 +20,14 @@ namespace CirculoNegocios.DAL
                     var ret = (from p in context.tbNoticias
                                where p.idCategoria == idCategoria && p.dataHoraDe <= DateTime.Now
                                                                     && p.dataHoraAte >= DateTime.Now
+                                                                    && p.estado == estado
                                select p).ToList();
 
                     lstNoticia = CastListNoticias(ret);
 
                 }
             }
-            catch (Exception)
+            catch (Exception ex)
             {
                 throw;
             }

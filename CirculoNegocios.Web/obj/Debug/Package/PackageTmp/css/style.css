@@ -1,0 +1,57 @@
+.bgb {background-color: #b12964; color: #ffffff;}
+.bga {background-color: #35a4f5; color: #ffffff;}
+.bgg {background-color: #46a546; color: #ffffff;}
+.bgo {background-color: #fa8430; color: #ffffff;}
+.corfundo {background-color:#0094ff;}
+.data {border-bottom:solid;border-width: 1px;border-bottom-color: #D9D9F3;text-align: end;margin-bottom: 15px;}
+.banner {margin-bottom: 30px;text-align:center;height: 300px;overflow:hidden;}
+.banner img {width: auto;border-radius: 6px;}
+#footer {position: relative; bottom: 0;height: 135px;line-height: 35px;text-align: center; width: 100%;background-color: #f0f0f0;border:solid;border-width:1px;border-color: #D9D9F3;clear: both}
+.fixoProdutos {margin-top: 40px;border: 4px solid #f0f0f0;padding: 20px 32px;}
+.horizontalFixo {clear: both;position: relative;padding-top: 10px;}
+.horizontalFixo .produtos {padding-top: 5px;border-top: 0;}
+.produtos {overflow: hidden;}
+.fixoProdutos ul {list-style: none;margin: 0;padding: 0;border: 0;line-height: 20px;outline: 0;}
+.fixoProdutos ul a {font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;font-size: 14px;color: #333333;}
+.horizontalFixo .produtos li:first-child {margin-left: 0;}
+.horizontalFixo .produtos li {width: 110px;float: left;margin-left: 45px;}
+.horizontalFixo .produtos li {width: 125px;}
+.detNoticia {text-align: left;color: white;}
+.moduloHorizontal {margin-top: 20px;padding-bottom: 20px;background-color: #262626;position: relative;overflow: hidden;}
+.borda {border-color: #666;border-bottom-style: dotted;border-width:1px;padding-bottom: 5px;}
+.moduloHorizontal .itens li:first-child {margin: 0;}
+.moduloHorizontal .itens li {width: 100px;float: left;margin-left: 20px;}
+.moduloHorizontal .itens img {width: 95px;height: 80px;}
+.moduloHorizontal ul {list-style: none;margin: 0;padding-top: 10px;padding-left: 20px;border: 0;outline: 0;}
+/*TIKER DE COTAÇÃO*/
+#Mticker, p {margin: 0;padding: 0;border: 0;font-size: 100%;font: inherit;vertical-align: baseline;}
+#Mticker, ul {margin: 0;padding: 0;border: 0;font-size: 100%;font: inherit;vertical-align: baseline;display: block;}
+section.barra-ticker {width: 100%;height: 42px;overflow: hidden;}
+section.barra-ticker a {color: #fff;}
+section.barra-ticker #bolsas{width:314px}
+section.barra-ticker #cambio{width:630px}
+section.barra-ticker #bolsas,section.barra-ticker #cambio{float:left}
+section.barra-ticker div h2{float:left;position:relative;width:94px;height:40px;padding-top:10px;margin:2px 20px 2px 2px;font:bold 15px arial;color:#fff;text-align:center}
+section.barra-ticker div h2 span.seta{display:block;width:7px;height:13px;background-position:0 -508px;position:absolute;top:12px;right:-7px}
+section.barra-ticker div ul{float:left;list-style:none;padding:2px 0;height:38px}
+section.barra-ticker #bolsas ul li,section.barra-ticker #cambio ul li{height:34px;padding-top:4px}
+section.barra-ticker #bolsas ul li{width:198px}
+section.barra-ticker #cambio ul li {width: 151px;}
+section.barra-ticker div ul li{float:left;width:126px;border-left:1px solid #424242;opacity:50%;padding-left:17px;margin-left:7px}
+section.barra-ticker div ul li:first-child{border:0;margin:0;padding:0}
+section.barra-ticker div ul li p{font-size:10px;color:#ccc;text-transform:uppercase;font: bold 10px arial;}
+.pg-sprites1 {background-image: url("http://imguol.com/c/_layout/v1/_geral/sprites/projeto-grafico/sprites1-1.png") !important;}
+section.barra-ticker div ul li p.cotacao{font:bold 14px arial;color:#fff;text-transform:none}
+section.barra-ticker div ul li p.cotacao span {margin-right: 10px;}
+.pg-bgcolor3,.h-pg-bgcolor3:hover{background-color:#262626 !important}
+.pg-bgcolor4,.h-pg-bgcolor4:hover{background-color:#333 !important}
+section.barra-ticker div h2 span.seta {display: block;width: 7px;height: 13px;background-position: 0 -508px;position: absolute;top: 12px;right: -7px;}
+.pg-sprites1 {background-image: url("http://imguol.com/c/_layout/v1/_geral/sprites/projeto-grafico/sprites1-1.png") !important;}
+.sprites4 {background-image: url(http://imguol.com/c/_layout/v1/_geral/sprites/estacao/economia/sprite_icones_economia.png) !important;background-repeat: no-repeat;}
+section.mod .ic-cotacao {width: 8px;height: 10px;padding-left: 14px;}
+section.mod .vlr-negativo {color: #c00;}
+section.mod .ic-cotacao.vlr-negativo {background-position: 0 -17px;color: #fc2a2a;}
+section.mod .ic-cotacao.vlr-positivo {background-position: 2px 3px;color: #29cc29;}
+section.mod .vlr-positivo {color: #393;}
+.formAnuncio{margin-left: 100px;width: 60%;margin-bottom:60px}
+#comandos {text-align: right; }

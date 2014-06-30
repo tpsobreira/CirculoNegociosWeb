@@ -11,9 +11,9 @@ namespace CirculoNegocios.Business
     {
         BannerDAL lObjBannerDAL = new BannerDAL();
 
-        public List<BannerEntity> ConsultaBannersAtivosByTipo(int idTipoBanner)
+        public List<BannerEntity> ConsultaBannersAtivosByTipo(int idTipoBanner, string estado)
         {
-            return lObjBannerDAL.ConsultaBannersAtivosByTipo(idTipoBanner);
+            return lObjBannerDAL.ConsultaBannersAtivosByTipo(idTipoBanner, estado);
         }
     }
 }

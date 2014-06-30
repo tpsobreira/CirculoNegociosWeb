@@ -15,5 +15,10 @@ namespace CirculoNegocios.Business
         {
             return lObjClienteDAL.ConsultaClientesByTextoBusca(estado, texto);
         }
+
+        public ClienteEntity ConsultaClienteById(int idCliente)
+        {
+            return lObjClienteDAL.ConsultaClienteById(idCliente);
+        }
     }
 }

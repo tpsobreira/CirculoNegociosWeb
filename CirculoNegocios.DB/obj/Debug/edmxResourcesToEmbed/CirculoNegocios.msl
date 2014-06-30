@@ -58,6 +58,11 @@
     <EntitySetMapping Name="tbClientes">
       <EntityTypeMapping TypeName="CirculoNegocioModel.tbCliente">
         <MappingFragment StoreEntitySet="tbClientes">
+          <ScalarProperty Name="horaFdsAte" ColumnName="horaFdsAte" />
+          <ScalarProperty Name="horaFdsDe" ColumnName="horaFdsDe" />
+          <ScalarProperty Name="horaSemanaAte" ColumnName="horaSemanaAte" />
+          <ScalarProperty Name="horaSemanaDe" ColumnName="horaSemanaDe" />
+          <ScalarProperty Name="bairro" ColumnName="bairro" />
           <ScalarProperty Name="idSubCategoriaCliente" ColumnName="idSubCategoriaCliente" />
           <ScalarProperty Name="id" ColumnName="id" />
           <ScalarProperty Name="razaoSocial" ColumnName="razaoSocial" />
@@ -95,32 +100,6 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
-    <EntitySetMapping Name="tbFilePathNoticias">
-      <EntityTypeMapping TypeName="CirculoNegocioModel.tbFilePathNoticia">
-        <MappingFragment StoreEntitySet="tbFilePathNoticias">
-          <ScalarProperty Name="id" ColumnName="id" />
-          <ScalarProperty Name="idNoticia" ColumnName="idNoticia" />
-          <ScalarProperty Name="filePath" ColumnName="filePath" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
-    <EntitySetMapping Name="tbNoticias">
-      <EntityTypeMapping TypeName="CirculoNegocioModel.tbNoticia">
-        <MappingFragment StoreEntitySet="tbNoticias">
-          <ScalarProperty Name="id" ColumnName="id" />
-          <ScalarProperty Name="titulo" ColumnName="titulo" />
-          <ScalarProperty Name="Sinopse" ColumnName="Sinopse" />
-          <ScalarProperty Name="Descricao" ColumnName="Descricao" />
-          <ScalarProperty Name="estado" ColumnName="estado" />
-          <ScalarProperty Name="idCategoria" ColumnName="idCategoria" />
-          <ScalarProperty Name="dataHoraDe" ColumnName="dataHoraDe" />
-          <ScalarProperty Name="dataHoraAte" ColumnName="dataHoraAte" />
-          <ScalarProperty Name="responsavelInsercao" ColumnName="responsavelInsercao" />
-          <ScalarProperty Name="filePathImagens" ColumnName="filePathImagens" />
-          <ScalarProperty Name="Ativo" ColumnName="Ativo" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
     <EntitySetMapping Name="tbTipoBanners">
       <EntityTypeMapping TypeName="CirculoNegocioModel.tbTipoBanner">
         <MappingFragment StoreEntitySet="tbTipoBanner">
@@ -134,6 +113,8 @@
     <EntitySetMapping Name="tbOfertas">
       <EntityTypeMapping TypeName="CirculoNegocioModel.tbOferta">
         <MappingFragment StoreEntitySet="tbOfertas">
+          <ScalarProperty Name="Ativo" ColumnName="Ativo" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
           <ScalarProperty Name="dataUltimaAlteracao" ColumnName="dataUltimaAlteracao" />
           <ScalarProperty Name="responsavelUltimaAlteracao" ColumnName="responsavelUltimaAlteracao" />
           <ScalarProperty Name="dataAte" ColumnName="dataAte" />
@@ -150,6 +131,8 @@
     <EntitySetMapping Name="tbPromocaos">
       <EntityTypeMapping TypeName="CirculoNegocioModel.tbPromocao">
         <MappingFragment StoreEntitySet="tbPromocoes">
+          <ScalarProperty Name="Ativo" ColumnName="Ativo" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
           <ScalarProperty Name="dataUltimaAlteracao" ColumnName="dataUltimaAlteracao" />
           <ScalarProperty Name="responsavelUltimaAlteracao" ColumnName="responsavelUltimaAlteracao" />
           <ScalarProperty Name="dataAte" ColumnName="dataAte" />
@@ -168,6 +151,42 @@
           <ScalarProperty Name="responsavelUltimaAlteracao" ColumnName="responsavelUltimaAlteracao" />
           <ScalarProperty Name="DataUltimaAlteracao" ColumnName="DataUltimaAlteracao" />
           <ScalarProperty Name="Nome" ColumnName="Nome" />
+          <ScalarProperty Name="idCategoria" ColumnName="idCategoria" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbNoticias">
+      <EntityTypeMapping TypeName="CirculoNegocioModel.tbNoticia">
+        <MappingFragment StoreEntitySet="tbNoticias">
+          <ScalarProperty Name="Ativo" ColumnName="Ativo" />
+          <ScalarProperty Name="imagem3" ColumnName="imagem3" />
+          <ScalarProperty Name="imagem2" ColumnName="imagem2" />
+          <ScalarProperty Name="imagem1" ColumnName="imagem1" />
+          <ScalarProperty Name="imagemHome" ColumnName="imagemHome" />
+          <ScalarProperty Name="responsavelInsercao" ColumnName="responsavelInsercao" />
+          <ScalarProperty Name="dataHoraAte" ColumnName="dataHoraAte" />
+          <ScalarProperty Name="dataHoraDe" ColumnName="dataHoraDe" />
+          <ScalarProperty Name="idCategoria" ColumnName="idCategoria" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+          <ScalarProperty Name="Descricao" ColumnName="Descricao" />
+          <ScalarProperty Name="Sinopse" ColumnName="Sinopse" />
+          <ScalarProperty Name="titulo" ColumnName="titulo" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbBannerBuscas">
+      <EntityTypeMapping TypeName="CirculoNegocioModel.tbBannerBusca">
+        <MappingFragment StoreEntitySet="tbBannerBusca">
+          <ScalarProperty Name="responsavelUltimaAlteracao" ColumnName="responsavelUltimaAlteracao" />
+          <ScalarProperty Name="DataUltimaAlteracao" ColumnName="DataUltimaAlteracao" />
+          <ScalarProperty Name="Ativo" ColumnName="Ativo" />
+          <ScalarProperty Name="dataAte" ColumnName="dataAte" />
+          <ScalarProperty Name="dataDe" ColumnName="dataDe" />
+          <ScalarProperty Name="imagemFilePath" ColumnName="imagemFilePath" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+          <ScalarProperty Name="idCliente" ColumnName="idCliente" />
           <ScalarProperty Name="idCategoria" ColumnName="idCategoria" />
           <ScalarProperty Name="id" ColumnName="id" />
         </MappingFragment>
