@@ -64,9 +64,13 @@ namespace CirculoNegocios.Web
 
             string estado = Request.QueryString["uf"].ToString();
             string textoBusca = Request.QueryString["txt"].ToString();
+            int idSubCategoria = Convert.ToInt32(Request.QueryString["idSub"].ToString());
 
-            lstClintes = clienteBusiness.ConsultaClientesByTextoBusca(estado, textoBusca);
-
+            if (!string.IsNullOrEmpty(textoBusca))
+                lstClintes = clienteBusiness.ConsultaClientesByTextoBusca(estado, textoBusca);
+            else
+                lstClintes = clienteBusiness.ConsultaClientesBySubCategoria(idSubCategoria, estado);
+            
             PagedDataSource Pgs = new PagedDataSource();
             Pgs.AllowPaging = true; //Seta paginação no PagedDataSource
             Pgs.DataSource = lstClintes; // No caso, está setando como datasource o um objeto mas pode ser por exemplo, um DataSet.

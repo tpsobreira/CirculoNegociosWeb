@@ -40,7 +40,7 @@
                                             </HeaderTemplate>
                                             <ItemTemplate>
                                                 <span>
-                                                    <%#DataBinder.Eval(Container.DataItem,"Nome").ToString() %></span><br />
+                                                    <a href='<%#String.Format("Busca.aspx?uf={0}&txt=&idSub={1}", Session["UF"].ToString(), DataBinder.Eval(Container.DataItem,"id").ToString()) %>'><%#DataBinder.Eval(Container.DataItem,"Nome").ToString() %></a></span><br />
                                             </ItemTemplate>
                                         </asp:Repeater>
                                     </div>

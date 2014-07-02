@@ -75,8 +75,13 @@ namespace CirculoNegocios.Web
         private void CarregaNoticias()
         {
             var Noticia = noticiaBusiness.ConsultaNoticiasAtivosByCategoria(4, Session["UF"].ToString());
-            litTituloNoticiaLateralEsquerda.Text = Noticia[0].titulo;
-            litSinopseNoticiaLateralEsquerda.Text = Noticia[0].Sinopse;
+            
+            if (Noticia.Count > 0)
+            {
+                litTituloNoticiaLateralEsquerda.Text = Noticia[0].titulo;
+                litSinopseNoticiaLateralEsquerda.Text = Noticia[0].Sinopse;    
+            }
+            
         }
 
         private void CarregaOfertas()

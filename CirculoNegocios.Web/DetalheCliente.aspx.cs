@@ -38,7 +38,13 @@ namespace CirculoNegocios.Web
                 rptServicos.DataSource = servicos;
                 rptServicos.DataBind();
 
-                //imgCliente.ImageUrl = System.Configuration.ConfigurationManager.AppSettings["NavigateUrlImagens"].ToString() + DataBinder.Eval(Container.DataItem, "imagemFilePath").ToString().Substring(DataBinder.Eval(Container.DataItem, "imagemFilePath").ToString().LastIndexOf("BannerPrincipal"), DataBinder.Eval(Container.DataItem, "imagemFilePath").ToString().Length - DataBinder.Eval(Container.DataItem, "imagemFilePath").ToString().LastIndexOf("BannerPrincipal"));
+                imgCliente.ImageUrl = System.Configuration.ConfigurationManager.AppSettings["NavigateUrlImagens"].ToString() + cliente.anexoLogoPath.ToString().Substring(cliente.anexoLogoPath.LastIndexOf("LogotipoClientes"), cliente.anexoLogoPath.Length - cliente.anexoLogoPath.LastIndexOf("LogotipoClientes"));
+
+                ImgCliente1.ImageUrl = System.Configuration.ConfigurationManager.AppSettings["NavigateUrlImagens"].ToString() + cliente.anexoImagem1Path.ToString().Substring(cliente.anexoImagem1Path.LastIndexOf("LogotipoClientes"), cliente.anexoImagem1Path.Length - cliente.anexoImagem1Path.LastIndexOf("LogotipoClientes"));
+
+                ImgCliente2.ImageUrl = System.Configuration.ConfigurationManager.AppSettings["NavigateUrlImagens"].ToString() + cliente.anexoImagem2Path.ToString().Substring(cliente.anexoImagem2Path.LastIndexOf("LogotipoClientes"), cliente.anexoImagem2Path.Length - cliente.anexoImagem2Path.LastIndexOf("LogotipoClientes"));
+
+                ImgCliente3.ImageUrl = System.Configuration.ConfigurationManager.AppSettings["NavigateUrlImagens"].ToString() + cliente.anexoImagem3Path.ToString().Substring(cliente.anexoImagem3Path.LastIndexOf("LogotipoClientes"), cliente.anexoImagem3Path.Length - cliente.anexoImagem3Path.LastIndexOf("LogotipoClientes"));
                 
 
             }

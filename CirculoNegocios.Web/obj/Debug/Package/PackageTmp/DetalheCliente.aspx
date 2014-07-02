@@ -142,13 +142,13 @@
                                 </ol>
                                 <div class="carousel-inner">
                                     <div class="item active">
-                                        <img alt="" src="http://lorempixel.com/1600/500/sports/1">
+                                        <asp:Image ID="ImgCliente1" runat="server" />
                                     </div>
                                     <div class="item">
-                                        <img alt="" src="http://lorempixel.com/1600/500/sports/2">
+                                        <asp:Image ID="ImgCliente2" runat="server" />
                                     </div>
                                     <div class="item">
-                                        <img alt="" src="http://lorempixel.com/1600/500/sports/3">
+                                        <asp:Image ID="ImgCliente3" runat="server" />
                                     </div>
                                 </div>
                                 <a class="left carousel-control" href="#carousel-970968" data-slide="prev"><span
