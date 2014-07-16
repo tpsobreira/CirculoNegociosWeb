@@ -23,6 +23,14 @@
     <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
     <script type="text/javascript" src="js/infobox.js"></script>
     <script type="text/javascript">
+        $(function () {
+            $('#carousel-970968').carousel({
+                interval: 2500
+            })
+        });
+    </script>
+</asp:Content>
+    <script type="text/javascript">
         function initialize() {
             var secheltLoc = new google.maps.LatLng(-23.6108174, -46.6379595, 17);
 
@@ -77,15 +85,17 @@
     <form id="form1" runat="server">
     <div class="container">
         <div class="row clearfix">
+            
             <div class="col-md-12 column">
+            <a href="javascript:history.go(-1)">Voltar</a>
                 <div class="page-header">
                     <h1>
                         <asp:Literal ID="litNomeCliente" runat="server"></asp:Literal><small><asp:Literal
                             ID="litSubTitulo" runat="server"></asp:Literal></small></h1>
                 </div>
                 <div class="row clearfix">
-                    <div class="col-md-2 column" style="text-align: center; margin-top: 60px;">
-                        <asp:Image ID="imgCliente" runat="server" />
+                    <div class="col-md-2 column" style="text-align: center; margin-top: 10px;">
+                        <asp:Image ID="imgCliente" runat="server" Width="190px" Height="155px" />
                     </div>
                     <div class="col-md-10 column">
                         <div class="jumbotron well" style="background-color: #ea9355; color: #ffffff; border-color: #db6613">
@@ -156,8 +166,12 @@
                                         href="#carousel-970968" data-slide="next"><span class="glyphicon glyphicon-chevron-right">
                                         </span></a>
                             </div>
+                            <br />
+                            <br />
+                            <br />
                         </div>
                     </div>
+                    
                     <div class="col-md-12 column">
                         <div id="map_canvas" style="width: 100%; height: 400px;">
                         </div>

@@ -36,9 +36,8 @@ namespace CirculoNegocios.Web
 
         protected void btnPesquisar_Click(object sender, EventArgs e)
         {
-            Response.Redirect(string.Format("Busca.aspx?txt={0}&uf={1}", txtBuscaServicos.Text, ddlEstado.SelectedValue));
+            Response.Redirect(string.Format("Busca.aspx?txt={0}&uf={1}&idSub=0", txtBuscaServicos.Text, ddlEstado.SelectedValue));
         }
-
         
     }
 }

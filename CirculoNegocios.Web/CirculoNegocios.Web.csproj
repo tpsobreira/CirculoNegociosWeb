@@ -60,6 +60,10 @@
     <Reference Include="System.EnterpriseServices" />
     <Reference Include="System.Web.Mobile" />
     <Reference Include="System.Xml.Linq" />
+    <Reference Include="Uol.PagSeguro, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Uol.PagSeguro.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Content Include="AnuncieConosco.aspx" />
@@ -120,18 +124,39 @@
     <Content Include="img\passador\1.jpg" />
     <Content Include="img\passador\2.jpg" />
     <Content Include="img\passador\3.jpg" />
+    <Content Include="js\assets\bootstrap\css\bootstrap-responsive.css" />
+    <Content Include="js\assets\bootstrap\css\bootstrap-responsive.min.css" />
+    <Content Include="js\assets\bootstrap\css\bootstrap.css" />
+    <Content Include="js\assets\bootstrap\css\bootstrap.min.css" />
+    <Content Include="js\assets\bootstrap\img\glyphicons-halflings-white.png" />
+    <Content Include="js\assets\bootstrap\img\glyphicons-halflings.png" />
+    <Content Include="js\assets\bootstrap\js\bootstrap.js" />
+    <Content Include="js\assets\bootstrap\js\bootstrap.min.js" />
+    <Content Include="js\assets\css\video-default.css" />
+    <Content Include="js\assets\js\jquery-1.8.1.min.js" />
+    <Content Include="js\assets\js\jquery.video-ui.js" />
     <Content Include="js\bootstrap.min.js" />
     <Content Include="js\html5shiv.js" />
     <Content Include="js\infobox.js" />
     <Content Include="js\jquery.min.js" />
     <Content Include="js\less-1.3.3.min.js" />
     <Content Include="js\scripts.js" />
+    <Content Include="LerMais.aspx" />
+    <Content Include="LerMais.html" />
     <Content Include="QuemSomos.aspx" />
     <Content Include="QuemSomos.html" />
     <Content Include="ResultadoBusca.html" />
     <Content Include="Scripts\jquery-1.4.1-vsdoc.js" />
     <Content Include="Scripts\jquery-1.4.1.js" />
     <Content Include="Scripts\jquery-1.4.1.min.js" />
+    <Content Include="Videos.aspx" />
+    <Content Include="video\demo.html" />
+    <Content Include="video\font\vjs.svg" />
+    <Content Include="video\video-js.css" />
+    <Content Include="video\video-js.min.css" />
+    <Content Include="video\video-js.swf" />
+    <Content Include="video\video.dev.js" />
+    <Content Include="video\video.js" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
@@ -199,6 +224,13 @@
     <Compile Include="Home.aspx.designer.cs">
       <DependentUpon>Home.aspx</DependentUpon>
     </Compile>
+    <Compile Include="LerMais.aspx.cs">
+      <DependentUpon>LerMais.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LerMais.aspx.designer.cs">
+      <DependentUpon>LerMais.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="QuemSomos.aspx.cs">
       <DependentUpon>QuemSomos.aspx</DependentUpon>
@@ -206,6 +238,13 @@
     </Compile>
     <Compile Include="QuemSomos.aspx.designer.cs">
       <DependentUpon>QuemSomos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Videos.aspx.cs">
+      <DependentUpon>Videos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Videos.aspx.designer.cs">
+      <DependentUpon>Videos.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -239,6 +278,14 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="CirculoSemBolsa.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="js\bootstrapvideoplayer.jquery.json" />
+    <None Include="video\demo.captions.vtt" />
+    <None Include="video\font\vjs.eot" />
+    <None Include="video\font\vjs.ttf" />
+    <None Include="video\font\vjs.woff" />
+    <None Include="video\video-js.less" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

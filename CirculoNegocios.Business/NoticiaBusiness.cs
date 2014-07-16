@@ -15,5 +15,15 @@ namespace CirculoNegocios.Business
         {
             return lObjNoticiaDAL.ConsultaNoticiasAtivosByCategoria(idCategoria, estado);
         }
+
+        public List<NoticiaEntity> ConsultaNoticiasByTexto(string textoConsulta, string estado)
+        {
+            return lObjNoticiaDAL.ConsultaNoticiasByTexto(textoConsulta, estado);
+        }
+
+        public NoticiaEntity ConsultaNoticiaById(int idNoticia)
+        {
+            return lObjNoticiaDAL.ConsultaNoticiaById(idNoticia);
+        }
     }
 }

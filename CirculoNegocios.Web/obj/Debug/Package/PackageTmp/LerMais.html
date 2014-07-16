@@ -1,0 +1,197 @@
+﻿<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="utf-8">
+    <title>Círculo de Negócios</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="n/a">
+    <meta name="author" content="Marcio Coutinho">
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+  <![endif]-->
+
+    <!-- Fav and touch icons -->
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/scripts.js"></script>
+    <script>
+        function timer() {
+            var d = new Date();
+            var mydate = new Date()
+            var year = mydate.getYear()
+            if (year < 2000)
+                year += (year < 1900) ? 1900 : 0
+            var day = mydate.getDay()
+            var month = mydate.getMonth()
+            var daym = mydate.getDate()
+            if (daym < 10)
+                daym = "0" + daym
+            var dayarray = new Array("Domingo", "Segunda-feira", "Terça-feira", "Quarta-feira", "Quinta-feira", "Sexta-feira", "Sábado")
+            var montharray = new Array(" de Janeiro de ", " de Fevereiro de ", " de Março de ", "de Abril de ", "de Maio de ", "de Junho de", "de Julho de ", "de Agosto de ", "de Setembro de ", " de Outubro de ", " de Novembro de ", " de Dezembro de ")
+
+            document.getElementById('date').innerHTML = ("   " + dayarray[day] + ", " + daym + " " + montharray[month] + year + " ").toString();
+        }
+    </script>
+</head>
+
+<body onload="timer()">
+    <div class="container">
+        <div class="row clearfix">
+            <div class="col-md-12 column">
+                <div>
+                    <table width="100%">
+                        <tr>
+                            <td>
+                                <img style="margin-top: 40px; margin-bottom: 10px; margin-left: 60px;" class="center-block" src="img/logo5.png" alt="logo" /></td>
+                            <td>
+                                <div style="text-align: end; margin-bottom: 25px; margin-right: 25px;">
+                                    <img src="img/identidade.png" style="width: 20px; height: 20px" />
+                                    <img src="img/facebook.png" />
+                                </div>
+                                <div id="date" class="data"></div>
+                                <nav class="navbar navbar-default" role="navigation">
+                                    <ul class="nav navbar-nav navbar-left">
+                                        <li style="margin: 15px 0px 0px 10px;">Procuro por:</li>
+                                        <li>
+                                            <form class="navbar-form navbar-left" role="search">
+                                                <div class="form-group">
+                                                    <input type="text" value="Academia, Pizzaria" class="form-control">
+                                                </div>
+                                            </form>
+                                        </li>
+                                        <li style="text-align: center; margin: 15px 0px 0px 0px;">onde</li>
+                                        <li style="text-align: center; margin: 7px 0px 0px 10px;">
+                                            <div class="btn-group">
+                                                <button class="btn btn-default" contenteditable="true">Estado</button>
+                                                <button data-toggle="dropdown" class="btn btn-default dropdown-toggle"><span class="caret"></span></button>
+                                                <ul class="dropdown-menu" contenteditable="true">
+                                                    <li><a href="#">São Paulo</a></li>
+                                                    <li><a href="#">Rio de Janeiro</a></li>
+                                                    <li><a href="#">Minas Gerais</a></li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li style="text-align: center; margin: 7px 10px 0px 10px;">
+                                            <button type="submit" class="btn btn-default">Pesquisar</button></li>
+                                    </ul>
+                                </nav>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <br />
+                <nav class="navbar navbar-default" role="navigation">
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav">
+                            <li><a href="Home.aspx">Home</a></li>
+                            <li><a href="QuemSomos.html">Quem somos</a></li>
+                            <li><a href="Categorias.html">Categorias</a></li>
+                            <li><a href="AnuncieConosco.html">Anuncie conosco</a></li>
+                            <li><a href="Contato.html">Contato</a></li>
+                        </ul>
+                    </div>
+                </nav>
+                <div class="col-md-12 column">
+                    <div class="col-lg-8">
+                        <div style="margin-left: 20px;">
+                            <div class="page-header">
+    	                        <h1>Duis molestie consequat semper, cras risus nisl, porta a magna sagittis.</h1>
+                            </div>
+                            <div class="img-rounded" >
+                                <img src="http://lorempixel.com/output/city-q-c-450-290-3.jpg">
+                            </div>
+                            <br />
+                            <blockquote>
+		                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+		                        <small>Someone famous <cite title="Source Title">Source Title</cite></small>
+                            </blockquote>
+                            <br />
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sit amet odio id diam malesuada dapibus. Ut ac malesuada ligula. Nullam a convallis magna, vitae varius ligula. Duis vitae massa in purus tristique egestas. Phasellus tristique ipsum id sem consequat dapibus. Ut iaculis ornare mi, accumsan porttitor velit pharetra id. Proin in vestibulum dui, at aliquam lectus. Duis molestie consequat semper. Cras risus nisl, porta a magna sagittis, fermentum tincidunt urna. Proin vitae lacus euismod augue egestas blandit sed aliquam justo. Suspendisse vitae facilisis mi, non congue enim. Aenean mattis, quam ut hendrerit venenatis, velit velit luctus erat, euismod varius quam velit id massa.
+                            </p>
+                            <br />
+                            <p>
+                                Nullam tempus pellentesque lorem non cursus. Pellentesque sed mauris diam. Cras facilisis eleifend diam, quis pulvinar nisi ultricies a. Aliquam ligula ante, feugiat in pulvinar non, porta eget orci. In velit leo, luctus sed euismod vel, lobortis in massa. Nulla vulputate iaculis sagittis. Sed pellentesque sagittis metus eu adipiscing. Vestibulum pretium in justo eu suscipit. Integer posuere, nulla sed condimentum hendrerit, nisl eros varius nulla, vitae venenatis nulla augue sit amet eros. Quisque malesuada risus et sapien adipiscing, at consectetur lacus dignissim. Sed facilisis tellus leo, a bibendum elit scelerisque vel. Vivamus justo odio, vestibulum quis gravida sit amet, elementum at nunc. Nunc at metus ut nulla dapibus iaculis. Nam in scelerisque lorem.
+                            </p>
+                            <br />
+                            <p>
+                                Phasellus congue, ante ac molestie eleifend, elit libero dapibus magna, id accumsan felis urna non lacus. Curabitur rutrum, erat at viverra fermentum, ligula turpis tincidunt nulla, non lacinia nulla libero vitae augue. Pellentesque libero erat, vulputate vitae lacus tempor, tristique cursus risus. Nullam ac libero fermentum, egestas urna quis, suscipit mauris. Donec nisi neque, pulvinar ac velit et, facilisis luctus libero. Praesent turpis nisl, rhoncus sit amet neque ut, sollicitudin lobortis libero. Proin metus sapien, laoreet sit amet varius laoreet, mollis nec erat. Quisque iaculis at augue ac dapibus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Cras ut felis euismod, blandit erat vitae, laoreet erat. Morbi egestas sagittis sagittis. Ut aliquet erat sed pulvinar hendrerit.
+                            </p>
+                            <br />
+                            <p>
+                                Morbi quis porta lacus. Aliquam erat volutpat. Curabitur eu elit vitae sem cursus tristique ut id arcu. Sed tincidunt velit sit amet blandit vehicula. Proin auctor auctor lectus, sed faucibus justo molestie in. Sed ultricies justo eu tincidunt sollicitudin. Nulla fermentum fringilla justo a luctus. Nullam mattis in sem ullamcorper laoreet. Mauris placerat sem id dui venenatis, ut lobortis massa mattis. Nam lacinia hendrerit interdum. Cras gravida euismod sem. Proin nec interdum lorem. Maecenas adipiscing sapien ut ornare sodales. Curabitur imperdiet velit tincidunt sem dignissim laoreet.
+                            </p>
+                            <br />
+                            <br />
+                            <br />
+                        </div>
+                    </div>
+                    <div class="col-md-4 column">
+                        <div style="margin: 10px 0px 10px 0px; text-align: center">
+                            <p>
+                                Fusce dapibus</p>
+                            <img src="img/marketing/01.gif" class="img-thumbnail" />
+                        </div>
+                        <div style="margin: 10px 0px 10px 0px; text-align: center">
+                            <p>
+                                Donec sed odio dui cursus</p>
+                            <img src="img/marketing/02.gif" class="img-thumbnail" />
+                        </div>
+                        <div style="margin: 10px 0px 10px 0px; text-align: center">
+                            <p>
+                                Cras sit amet nibh libero</p>
+                            <img src="img/marketing/03.gif" class="img-thumbnail" />
+                        </div>
+                        <div style="margin: 10px 0px 10px 0px; text-align: center">
+                            <p>
+                                Donec id elit non mi</p>
+                            <img src="img/marketing/04.gif" class="img-thumbnail" />
+                        </div>
+                        <div style="margin: 10px 0px 10px 0px; text-align: center">
+                            <p>
+                                Nulla vel metus</p>
+                            <img src="img/marketing/05.gif" class="img-thumbnail" />
+                        </div>
+                        <div style="margin: 10px 0px 10px 0px; text-align: center">
+                            <p>
+                                Fusce dapibus</p>
+                            <img src="img/marketing/01.gif" class="img-thumbnail" />
+                        </div>
+                        <div style="margin: 10px 0px 10px 0px; text-align: center">
+                            <p>
+                                Donec sed odio dui cursus</p>
+                            <img src="img/marketing/02.gif" class="img-thumbnail" />
+                        </div>
+                        <div style="margin: 10px 0px 10px 0px; text-align: center">
+                            <p>
+                                Nulla vel metus</p>
+                            <img src="img/marketing/05.gif" class="img-thumbnail" />
+                        </div>
+                        <div style="margin: 10px 0px 10px 0px; text-align: center">
+                            <p>
+                                Cras sit amet nibh libero</p>
+                            <img src="img/marketing/03.gif" class="img-thumbnail" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="footer">
+            <div class="copyright">
+                <i class="sprite-selos sprite-selos-uol logouol">Circulo de Negócios</i>
+                <span class="p1">© 1996 - 2014 CN - O melhor conteúdo. Todos os direitos reservados <a href="#">Hospedagem Host</a></span>
+                <div class="bts">
+                    <a href="#" id="btCrimesVirtuais">Crimes virtuais: denuncie</a> <span>|</span>
+                    <a href="#" id="btErratas">Erratas</a> <span>|</span>
+                    <a id="btComunicarErro" href="#">Comunicar erro</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

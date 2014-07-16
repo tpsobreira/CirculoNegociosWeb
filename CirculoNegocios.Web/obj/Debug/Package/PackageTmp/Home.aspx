@@ -1,11 +1,11 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Circulo.Master" AutoEventWireup="true"
-    CodeBehind="Home.aspx.cs" Inherits="CirculoNegocios.Web.Home" %>
+    CodeBehind="Home.aspx.cs" Inherits="CirculoNegocios.Web.Home" MaintainScrollPositionOnPostback="true" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <script type="text/javascript">
         $(function () {
             $('#carousel-990819').carousel({
-                interval: 2500
+                interval: 3000
             })
         });
     </script>
@@ -37,7 +37,8 @@
                     <asp:Literal ID="litSinopseNoticiaLateralEsquerda" runat="server"></asp:Literal>
                 </p>
                 <p>
-                    <a class="btn" href="#">Leia mais »</a></p>
+                    <asp:LinkButton ID="lnkLeiaMaisNoticiaLateralEsquerda" OnClick="lnkLeiaMaisNoticiaLateralEsquerda_Click"
+                        runat="server" Text="Leia mais »" Visible="false"></asp:LinkButton></p>
             </div>
             <div class="col-md-6 column">
                 <div class="carousel slide" id="carousel-990819">
@@ -46,7 +47,9 @@
                             <HeaderTemplate>
                             </HeaderTemplate>
                             <ItemTemplate>
-                                <li data-slide-to='<%#DataBinder.Eval(Container.DataItem,"Enum").ToString() %>' data-target="#carousel-990819" class='<%#DataBinder.Eval(Container.DataItem,"ClassCssCabecalho").ToString() %>'></li>
+                                <li data-slide-to='<%#DataBinder.Eval(Container.DataItem,"Enum").ToString() %>' data-target="#carousel-990819"
+                                    class='<%#DataBinder.Eval(Container.DataItem,"ClassCssCabecalho").ToString() %>'>
+                                </li>
                             </ItemTemplate>
                         </asp:Repeater>
                         <%--<li data-slide-to="0" data-target="#carousel-990819" class="active"></li>
@@ -71,7 +74,6 @@
                                 </div>
                             </ItemTemplate>
                         </asp:Repeater>
-
                     </div>
                     <a class="left carousel-control" href="#carousel-990819" data-slide="prev"><span
                         class="glyphicon glyphicon-chevron-left"></span></a><a class="right carousel-control"
@@ -87,97 +89,117 @@
                 </blockquote>--%>
                 <div class="row clearfix">
                     <div class="col-md-7 column" style="margin-top: 10px">
+                        <%--Noticia Central Esquerda 1--%>
                         <div class="media">
-                            <a href="#" class="pull-left">
-                                <img src="img/noticias/noticia1.jpg" class="media-object" alt='' /></a>
+                            <asp:LinkButton ID="lnkNoticiaCentralEsquerda1" OnClick="lnkNoticiaCentralEsquerda1_Click" runat="server">
+                                <asp:Image ID="ImgNoticiaCentralEsquerda1" CssClass="media-object" runat="server"
+                                    Width="80px" Height="80px" /></asp:LinkButton>
                             <div class="media-body">
                                 <h4 class="media-heading" style="color: red; font-family: 'Trebuchet MS'; font-size: 16px;">
-                                    - Nested media heading</h4>
+                                    -
+                                    <asp:Literal ID="litTituloNoticiaCentraEsquerda1" runat="server"></asp:Literal></h4>
                                 <p style="font-size: 12px">
-                                    Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante.</p>
+                                    <asp:Literal ID="litSinopseNoticiaCentraEsquerda1" runat="server"></asp:Literal></p>
                             </div>
                         </div>
                         <hr />
+                        <%--Noticia Central Esquerda 2--%>
                         <div class="media">
-                            <a href="#" class="pull-left">
-                                <img src="img/noticias/noticia2.jpg" class="media-object" alt='' /></a>
+                            <asp:LinkButton ID="lnkNoticiaCentralEsquerda2" OnClick="lnkNoticiaCentralEsquerda2_Click" runat="server">
+                                <asp:Image ID="ImgNoticiaCentralEsquerda2" CssClass="media-object" runat="server"
+                                    Width="142px" Height="100px" /></asp:LinkButton>
                             <div class="media-body">
                                 <h4 class="media-heading" style="color: red; font-family: 'Trebuchet MS'; font-size: 16px;">
-                                    - Etiam porta sem malesuada</h4>
+                                    -
+                                    <asp:Literal ID="litTituloNoticiaCentraEsquerda2" runat="server"></asp:Literal></h4>
                                 <p style="font-size: 12px">
-                                    Tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus gravida
-                                    nulla.</p>
+                                    <asp:Literal ID="litSinopseNoticiaCentraEsquerda2" runat="server"></asp:Literal></p>
                             </div>
                         </div>
                         <hr />
+                        <%--Noticia Central Esquerda 3--%>
                         <div class="media">
-                            <a href="#" class="pull-left">
-                                <img src="img/noticias/noticia3.jpg" class="media-object" alt='' /></a>
+                            <asp:LinkButton ID="lnkNoticiaCentralEsquerda3" OnClick="lnkNoticiaCentralEsquerda3_Click" runat="server">
+                            <asp:Image ID="ImgNoticiaCentralEsquerda3" CssClass="media-object" runat="server"
+                                Width="80px" Height="80px" /></asp:LinkButton>
                             <div class="media-body">
                                 <h4 class="media-heading" style="color: red; font-family: 'Trebuchet MS'; font-size: 16px;">
-                                    - Vel metus scelerisque ante</h4>
+                                    -
+                                    <asp:Literal ID="litTituloNoticiaCentraEsquerda3" runat="server"></asp:Literal></h4>
                                 <p style="font-size: 12px">
-                                    Eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
+                                    <asp:Literal ID="litSinopseNoticiaCentraEsquerda3" runat="server"></asp:Literal></p>
                             </div>
                         </div>
                         <br />
-                        <img src="img/marketing/08.png" style="width: 100%" />
+                        <%--<img src="img/marketing/07.png" style="width: 303px; height: 232px" />--%><asp:Image
+                            ID="imgBannerCentral" runat="server" Width="303px" Height="232px" />
                     </div>
                     <div class="col-md-5 column">
                         <h2>
-                            Heading
+                            <asp:Literal ID="litTituloNoticiaDestaqueDireita" runat="server"></asp:Literal>
                         </h2>
                         <p style="font-size: 12px">
-                            Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus
-                            commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
-                            Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
+                            <asp:Literal ID="litSinopseNoticiaDestaqueDireita" runat="server"></asp:Literal>
                         </p>
                         <p>
-                            <a class="btn" href="#">Leia mais »</a>
+                            <asp:LinkButton ID="lnkLeiaMaisNoticiaDestaqueDireita" OnClick="lnkLeiaMaisNoticiaDestaqueDireita_Click"
+                                runat="server" Text="Leia mais »" Visible="false"></asp:LinkButton>
                         </p>
+                        <br />
                     </div>
+                    <%--NOTICIAS CENTRAL DIREITO (4 NOTICIAS)--%>
                     <div class="col-md-5 column">
                         <div style="width: 95px; float: left;">
-                            <img src="img/noticias/noticia8.jpg" style="width: 95px; height: 70px" />
-                            <h5 class="media-heading" style="color: red; font-family: 'Trebuchet MS'; font-size: 14px;">
-                                Mauris condi mentum</h5>
-                            <p style="font-size: 12px">
-                                Sem malesuada magna mollis euismod.</p>
+                            <asp:LinkButton ID="lnkNoticiaCentralDireita1" OnClick="lnkNoticiaCentralDireita1_Click"
+                                runat="server">
+                                <asp:Image ID="imgNoticiaCentralDireita1" Width="95px" Height="70px" runat="server" />
+                                <h4 class="media-heading" style="color: red; font-family: 'Trebuchet MS'; font-size: 14px;">
+                                    <asp:Literal ID="litTituloNoticiaCentralDireita1" runat="server"></asp:Literal></h4>
+                                <p style="font-size: 12px">
+                                    <asp:Literal ID="litSinopseNoticiaCentralDireita1" runat="server"></asp:Literal></p>
+                            </asp:LinkButton>
                         </div>
                         <div style="width: 15px; float: left;">
                             &nbsp</div>
                         <div style="width: 95px; float: left;">
-                            <img src="img/noticias/noticia7.jpg" style="width: 95px; height: 70px" />
-                            <h4 class="media-heading" style="color: red; font-family: 'Trebuchet MS'; font-size: 12px;">
-                                Vel metus scelerisque ante</h4>
-                            <p style="font-size: 12px">
-                                tellus ac cursus commodo, tortor mauris condimentum nibh, ut</p>
+                            <asp:LinkButton ID="lnkNoticiaCentralDireita2" OnClick="lnkNoticiaCentralDireita2_Click"
+                                runat="server">
+                                <asp:Image ID="imgNoticiaCentralDireita2" runat="server" Width="95px" Heigh="70px" />
+                                <h4 class="media-heading" style="color: red; font-family: 'Trebuchet MS'; font-size: 14px;">
+                                    <asp:Literal ID="litTituloNoticiaCentralDireita2" runat="server"></asp:Literal></h4>
+                                <p style="font-size: 12px">
+                                    <asp:Literal ID="litSinopseNoticiaCentralDireita2" runat="server"></asp:Literal></p>
+                            </asp:LinkButton>
                         </div>
                         <hr />
                         <div style="width: 95px; float: left;">
-                            <img src="img/noticias/noticia6.jpg" style="width: 95px; height: 70px" />
-                            <h5 class="media-heading" style="color: red; font-family: 'Trebuchet MS'; font-size: 14px;">
-                                Mauris condi mentum</h5>
-                            <p style="font-size: 12px">
-                                Sem malesuada magna mollis euismod.</p>
+                            <asp:LinkButton ID="lnkNoticiaCentralDireita3" runat="server" OnClick="lnkNoticiaCentralDireita3_Click">
+                                <asp:Image ID="imgNoticiaCentralDireita3" runat="server" Width="95px" Heigh="70px" />
+                                <h4 class="media-heading" style="color: red; font-family: 'Trebuchet MS'; font-size: 14px;">
+                                    <asp:Literal ID="litTituloNoticiaCentralDireita3" runat="server"></asp:Literal></h4>
+                                <p style="font-size: 12px">
+                                    <asp:Literal ID="litSinopseNoticiaCentralDireita3" runat="server"></asp:Literal></p>
+                            </asp:LinkButton>
                         </div>
                         <div style="width: 15px; float: left;">
                             &nbsp</div>
                         <div style="width: 95px; float: left;">
-                            <img src="img/noticias/noticia5.jpg" style="width: 95px; height: 70px" />
-                            <h4 class="media-heading" style="color: red; font-family: 'Trebuchet MS'; font-size: 12px;">
-                                Vel metus scelerisque ante</h4>
-                            <p style="font-size: 12px">
-                                tellus ac cursus commodo, tortor mauris condimentum nibh, ut</p>
+                            <asp:LinkButton ID="lnkNoticiaCentralDireita4" runat="server" OnClick="lnkNoticiaCentralDireita4_Click">
+                                <asp:Image ID="imgNoticiaCentralDireita4" runat="server" Width="95px" Heigh="70px" />
+                                <h4 class="media-heading" style="color: red; font-family: 'Trebuchet MS'; font-size: 14px;">
+                                    <asp:Literal ID="litTituloNoticiaCentralDireita4" runat="server"></asp:Literal></h4>
+                                <p style="font-size: 12px">
+                                    <asp:Literal ID="litSinopseNoticiaCentralDireita4" runat="server"></asp:Literal></p>
+                            </asp:LinkButton>
                         </div>
                     </div>
                 </div>
                 <!-- UOLLLLL -->
                 <div class="horizontalFixo fixoProdutos">
                     <h3>
-                        <b>Cursos Gratuitos</b></h3>
+                        <b>Vídeos Interessantes</b></h3>
                     <ul class="produtos">
-                        <asp:Repeater ID="rptDestaqueDia" runat="server">
+                        <asp:Repeater ID="rptVideosInteressantes" runat="server">
                             <HeaderTemplate>
                             </HeaderTemplate>
                             <ItemTemplate>
@@ -188,18 +210,6 @@
                                 </a></li>
                             </ItemTemplate>
                         </asp:Repeater>
-                        <%--<li class="primeiro"><a class="opacity-hover" href="#"><span class="borda5 img">
-                            <img width="120" height="85" class="opacity-90 lazyload" src="img/marketing/00.jpg">
-                        </span><strong class="opacity-60">Eget metus</strong><br /> <span class="opacity-60 cor7">
-                            Eget metus. Fusce dapibus, tellus ac cursus comm.!</span> </a></li>
-                        <li class="primeiro"><a class="opacity-hover" href="#"><span class="borda5 img">
-                            <img width="120" height="85" class="opacity-90 lazyload" src="img/marketing/12.jpg">
-                        </span><strong class="opacity-60">Metus scelerisque ante</strong><br /> <span class="opacity-60 cor7">
-                            Eget metus. Fusce dapibus, tellus ac.</span> </a></li>
-                        <li class="primeiro"><a class="opacity-hover" href="#">  <span class="borda5 img">
-                            <img width="120" height="85" class="opacity-90 lazyload" src="img/marketing/13.jpg">
-                        </span><strong class="opacity-60">Nulla vel </strong><br /><span class="opacity-60 cor7">Cras
-                            sit amet nibh libero, in gravida nulla. </span></a></li>--%>
                     </ul>
                 </div>
                 <!-- UOLLLLL -->
@@ -218,75 +228,39 @@
                                     <a href='<%#DataBinder.Eval(Container.DataItem,"link").ToString() %>' target="_blank">
                                         <p>
                                             <asp:Literal ID="litTitulo" runat="server" Text='<%#DataBinder.Eval(Container.DataItem,"titulo").ToString() %>'></asp:Literal></p>
-                                        <img src='<%#System.Configuration.ConfigurationManager.AppSettings["NavigateUrlImagens"].ToString() + DataBinder.Eval(Container.DataItem,"imagemFilePath").ToString().Substring(DataBinder.Eval(Container.DataItem,"imagemFilePath").ToString().LastIndexOf("Promocoes"), DataBinder.Eval(Container.DataItem,"imagemFilePath").ToString().Length - DataBinder.Eval(Container.DataItem,"imagemFilePath").ToString().LastIndexOf("Promocoes")) %>'
+                                        <img width="115px" height="75px" src='<%#System.Configuration.ConfigurationManager.AppSettings["NavigateUrlImagens"].ToString() + DataBinder.Eval(Container.DataItem,"imagemFilePath").ToString().Substring(DataBinder.Eval(Container.DataItem,"imagemFilePath").ToString().LastIndexOf("Promocoes"), DataBinder.Eval(Container.DataItem,"imagemFilePath").ToString().Length - DataBinder.Eval(Container.DataItem,"imagemFilePath").ToString().LastIndexOf("Promocoes")) %>'
                                             class="img-thumbnail" /></a>
                                 </div>
                             </ItemTemplate>
                         </asp:Repeater>
-                        <%--<div style="margin: 10px 0px 10px 0px; text-align: center">
-                            <p>
-                                Fusce dapibus</p>
-                            <img src="img/marketing/01.gif" class="img-thumbnail" />
-                        </div>
-                        <div style="margin: 10px 0px 10px 0px; text-align: center">
-                            <p>
-                                Donec sed odio dui cursus</p>
-                            <img src="img/marketing/02.gif" class="img-thumbnail" />
-                        </div>
-                        <div style="margin: 10px 0px 10px 0px; text-align: center">
-                            <p>
-                                Cras sit amet nibh libero</p>
-                            <img src="img/marketing/03.gif" class="img-thumbnail" />
-                        </div>
-                        <div style="margin: 10px 0px 10px 0px; text-align: center">
-                            <p>
-                                Donec id elit non mi</p>
-                            <img src="img/marketing/04.gif" class="img-thumbnail" />
-                        </div>
-                        <div style="margin: 10px 0px 10px 0px; text-align: center">
-                            <p>
-                                Nulla vel metus</p>
-                            <img src="img/marketing/05.gif" class="img-thumbnail" />
-                        </div>
-                        <div style="margin: 10px 0px 10px 0px; text-align: center">
-                            <p>
-                                Fusce dapibus</p>
-                            <img src="img/marketing/01.gif" class="img-thumbnail" />
-                        </div>
-                        <div style="margin: 10px 0px 10px 0px; text-align: center">
-                            <p>
-                                Donec sed odio dui cursus</p>
-                            <img src="img/marketing/02.gif" class="img-thumbnail" />
-                        </div>
-                        <div style="margin: 10px 0px 10px 0px; text-align: center">
-                            <p>
-                                Nulla vel metus</p>
-                            <img src="img/marketing/05.gif" class="img-thumbnail" />
-                        </div>
-                        <div style="margin: 10px 0px 10px 0px; text-align: center">
-                            <p>
-                                Cras sit amet nibh libero</p>
-                            <img src="img/marketing/03.gif" class="img-thumbnail" />
-                        </div>--%>
                     </div>
                     <div class="col-md-6 column">
                         <h2>
-                            Heading
+                            <asp:Literal ID="litTituloNoticiaLateralDireita" runat="server"></asp:Literal>
                         </h2>
                         <p>
-                            Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus
-                            commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
-                            Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
+                            <asp:Literal ID="litSinopseNoticiaLateralDireita" runat="server"></asp:Literal>
                         </p>
                         <p>
-                            <a class="btn" href="#">Leia mais »</a>
+                            <asp:LinkButton ID="lnkLerMaisNoticiaLateralDireita" OnClick="lnkLerMaisNoticiaLateralDireita_Click" runat="server" Text="Leia mais »"
+                                Visible="false"></asp:LinkButton>
                         </p>
-                        <div style="margin: 10px 0px 10px 0px; text-align: center">
-                            <img src="img/marketing/07.png" class="img-thumbnail" />
-                        </div>
-                        <div style="margin: 10px 0px 10px 0px; text-align: center">
+                        <%--BANNER LATERAL DIREITO--%>
+                        <asp:Repeater ID="rptBannerLateralDireita" runat="server">
+                            <HeaderTemplate>
+                            </HeaderTemplate>
+                            <ItemTemplate>
+                                <div style="margin: 10px 0px 10px 0px; text-align: center">
+                                    <a href='<%#string.Format(@"DetalheCliente.aspx?idCliente={0}", DataBinder.Eval(Container.DataItem,"idCliente").ToString()) %>'>
+                                        <img src='<%#System.Configuration.ConfigurationManager.AppSettings["NavigateUrlImagens"].ToString() + DataBinder.Eval(Container.DataItem,"imagemFilePath").ToString().Substring(DataBinder.Eval(Container.DataItem,"imagemFilePath").ToString().LastIndexOf("Banners"), DataBinder.Eval(Container.DataItem,"imagemFilePath").ToString().Length - DataBinder.Eval(Container.DataItem,"imagemFilePath").ToString().LastIndexOf("Banners")) %>'
+                                            class="img-thumbnail" />
+                                    </a>
+                                </div>
+                            </ItemTemplate>
+                        </asp:Repeater>
+                        <%--<div style="margin: 10px 0px 10px 0px; text-align: center">
                             <img src="img/marketing/09.png" class="img-thumbnail" />
-                        </div>
+                        </div>--%>
                         <%--<img alt="140x140" src="img/mk3.jpg" class="img-thumbnail" style="margin: 10px 0px 10px 0px" />--%>
                     </div>
                 </div>
@@ -302,8 +276,9 @@
                     </HeaderTemplate>
                     <ItemTemplate>
                         <div style="margin: 10px 0px 10px 0px; text-align: center">
-                            <img src='<%#System.Configuration.ConfigurationManager.AppSettings["NavigateUrlImagens"].ToString() + DataBinder.Eval(Container.DataItem,"imagemFilePath").ToString().Substring(DataBinder.Eval(Container.DataItem,"imagemFilePath").ToString().LastIndexOf("Banners"), DataBinder.Eval(Container.DataItem,"imagemFilePath").ToString().Length - DataBinder.Eval(Container.DataItem,"imagemFilePath").ToString().LastIndexOf("Banners")) %>'
-                                class="img-thumbnail" />
+                            <a href='<%#string.Format(@"DetalheCliente.aspx?idCliente={0}", DataBinder.Eval(Container.DataItem,"idCliente").ToString()) %>'>
+                                <img src='<%#System.Configuration.ConfigurationManager.AppSettings["NavigateUrlImagens"].ToString() + DataBinder.Eval(Container.DataItem,"imagemFilePath").ToString().Substring(DataBinder.Eval(Container.DataItem,"imagemFilePath").ToString().LastIndexOf("Banners"), DataBinder.Eval(Container.DataItem,"imagemFilePath").ToString().Length - DataBinder.Eval(Container.DataItem,"imagemFilePath").ToString().LastIndexOf("Banners")) %>'
+                                    class="img-thumbnail" /></a>
                         </div>
                     </ItemTemplate>
                 </asp:Repeater>
@@ -334,11 +309,11 @@
                                 <HeaderTemplate>
                                 </HeaderTemplate>
                                 <ItemTemplate>
-                                    <li><a class="opacity-hover" href="#">
-                                        <img class="opacity-90 lazyload" src='<%#System.Configuration.ConfigurationManager.AppSettings["NavigateUrlImagens"].ToString() + DataBinder.Eval(Container.DataItem,"imagemFilePath").ToString().Substring(DataBinder.Eval(Container.DataItem,"imagemFilePath").ToString().LastIndexOf("Noticias"), DataBinder.Eval(Container.DataItem,"imagemFilePath").ToString().Length - DataBinder.Eval(Container.DataItem,"imagemFilePath").ToString().LastIndexOf("Noticias")) %>'
+                                    <li><a class="opacity-hover" href='<%#string.Format("LerMais.aspx?id={0}", DataBinder.Eval(Container.DataItem,"id").ToString()) %>'>
+                                        <img class="opacity-90 lazyload" src='<%#System.Configuration.ConfigurationManager.AppSettings["NavigateUrlImagens"].ToString() + DataBinder.Eval(Container.DataItem,"imagemHome").ToString().Substring(DataBinder.Eval(Container.DataItem,"imagemHome").ToString().LastIndexOf("HomeNoticia"), DataBinder.Eval(Container.DataItem,"imagemHome").ToString().Length - DataBinder.Eval(Container.DataItem,"imagemHome").ToString().LastIndexOf("HomeNoticia")) %>'
                                             width="140" height="98">
                                         <span class="detNoticia">
-                                            <asp:Literal ID="litSinopse" runat="server" Text='<%#DataBinder.Eval(Container.DataItem,"Sinopse").ToString() %>'></asp:Literal></span>
+                                            <asp:Literal ID="litSinopse" runat="server" Text='<%#DataBinder.Eval(Container.DataItem,"titulo").ToString() %>'></asp:Literal></span>
                                     </a></li>
                                 </ItemTemplate>
                             </asp:Repeater>
@@ -383,10 +358,11 @@
                             <HeaderTemplate>
                             </HeaderTemplate>
                             <ItemTemplate>
-                                <li class="primeiro"><a class="opacity-hover" href="#"><span class="borda5 img">
-                                    <img src="img/marketing/14.jpg">
-                                </span><strong class="opacity-60">Eget metus</strong><br />
-                                    <span class="opacity-60 cor7">Eget metus. Fusce dapibus, tellus ac cursus comm.!</span>
+                                <li class="primeiro"><a class="opacity-hover" href='<%#DataBinder.Eval(Container.DataItem,"link").ToString() %>'
+                                    target="_blank"><span class="borda5 img">
+                                        <img width="112px" height="112px" src='<%#System.Configuration.ConfigurationManager.AppSettings["NavigateUrlImagens"].ToString() + DataBinder.Eval(Container.DataItem,"imagemFilePath").ToString().Substring(DataBinder.Eval(Container.DataItem,"imagemFilePath").ToString().LastIndexOf("Ofertas"), DataBinder.Eval(Container.DataItem,"imagemFilePath").ToString().Length - DataBinder.Eval(Container.DataItem,"imagemFilePath").ToString().LastIndexOf("Ofertas")) %>'>
+                                    </span><strong class="opacity-60">'<%#DataBinder.Eval(Container.DataItem,"titulo").ToString() %>'</strong><br />
+                                    <span class="opacity-60 cor7">'<%#DataBinder.Eval(Container.DataItem,"descricao").ToString() %>'</span>
                                 </a></li>
                             </ItemTemplate>
                         </asp:Repeater>
@@ -416,8 +392,9 @@
                     </HeaderTemplate>
                     <ItemTemplate>
                         <div style="margin: 10px 0px 10px 0px; text-align: center">
-                            <img src='<%#System.Configuration.ConfigurationManager.AppSettings["NavigateUrlImagens"].ToString() + DataBinder.Eval(Container.DataItem,"imagemFilePath").ToString().Substring(DataBinder.Eval(Container.DataItem,"imagemFilePath").ToString().LastIndexOf("Banners"), DataBinder.Eval(Container.DataItem,"imagemFilePath").ToString().Length - DataBinder.Eval(Container.DataItem,"imagemFilePath").ToString().LastIndexOf("Banners")) %>'
-                                class="img-thumbnail" />
+                            <a href='<%#string.Format(@"DetalheCliente.aspx?idCliente={0}", DataBinder.Eval(Container.DataItem,"idCliente").ToString()) %>'>
+                                <img src='<%#System.Configuration.ConfigurationManager.AppSettings["NavigateUrlImagens"].ToString() + DataBinder.Eval(Container.DataItem,"imagemFilePath").ToString().Substring(DataBinder.Eval(Container.DataItem,"imagemFilePath").ToString().LastIndexOf("Banners"), DataBinder.Eval(Container.DataItem,"imagemFilePath").ToString().Length - DataBinder.Eval(Container.DataItem,"imagemFilePath").ToString().LastIndexOf("Banners")) %>'
+                                    class="img-thumbnail" /></a>
                         </div>
                     </ItemTemplate>
                 </asp:Repeater>

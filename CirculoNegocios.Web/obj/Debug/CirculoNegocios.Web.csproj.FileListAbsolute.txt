@@ -37,3 +37,4 @@ D:\Projetos\CirculoNegocios\CirculoNegociosWeb\CirculoNegocios.Web\bin\CirculoNe
 D:\Projetos\CirculoNegocios\CirculoNegociosWeb\CirculoNegocios.Web\bin\CirculoNegocios.Util.pdb
 D:\Projetos\CirculoNegocios\CirculoNegociosWeb\CirculoNegocios.Web\bin\CirculoNegocios.DAL.pdb
 D:\Projetos\CirculoNegocios\CirculoNegociosWeb\CirculoNegocios.Web\obj\Debug\CirculoNegocios.Web.pdb
+D:\Projetos\CirculoNegocios\CirculoNegociosWeb\CirculoNegocios.Web\bin\Uol.PagSeguro.pdb

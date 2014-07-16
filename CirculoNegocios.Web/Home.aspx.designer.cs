@@ -40,6 +40,15 @@ namespace CirculoNegocios.Web {
         protected global::System.Web.UI.WebControls.Literal litSinopseNoticiaLateralEsquerda;
         
         /// <summary>
+        /// lnkLeiaMaisNoticiaLateralEsquerda control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.LinkButton lnkLeiaMaisNoticiaLateralEsquerda;
+        
+        /// <summary>
         /// rptCabecalhoBannerPrincipal control.
         /// </summary>
         /// <remarks>
@@ -58,13 +67,301 @@ namespace CirculoNegocios.Web {
         protected global::System.Web.UI.WebControls.Repeater rptBannerPrincipal;
         
         /// <summary>
-        /// rptDestaqueDia control.
+        /// lnkNoticiaCentralEsquerda1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Repeater rptDestaqueDia;
+        protected global::System.Web.UI.WebControls.LinkButton lnkNoticiaCentralEsquerda1;
+        
+        /// <summary>
+        /// ImgNoticiaCentralEsquerda1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Image ImgNoticiaCentralEsquerda1;
+        
+        /// <summary>
+        /// litTituloNoticiaCentraEsquerda1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Literal litTituloNoticiaCentraEsquerda1;
+        
+        /// <summary>
+        /// litSinopseNoticiaCentraEsquerda1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Literal litSinopseNoticiaCentraEsquerda1;
+        
+        /// <summary>
+        /// lnkNoticiaCentralEsquerda2 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.LinkButton lnkNoticiaCentralEsquerda2;
+        
+        /// <summary>
+        /// ImgNoticiaCentralEsquerda2 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Image ImgNoticiaCentralEsquerda2;
+        
+        /// <summary>
+        /// litTituloNoticiaCentraEsquerda2 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Literal litTituloNoticiaCentraEsquerda2;
+        
+        /// <summary>
+        /// litSinopseNoticiaCentraEsquerda2 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Literal litSinopseNoticiaCentraEsquerda2;
+        
+        /// <summary>
+        /// lnkNoticiaCentralEsquerda3 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.LinkButton lnkNoticiaCentralEsquerda3;
+        
+        /// <summary>
+        /// ImgNoticiaCentralEsquerda3 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Image ImgNoticiaCentralEsquerda3;
+        
+        /// <summary>
+        /// litTituloNoticiaCentraEsquerda3 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Literal litTituloNoticiaCentraEsquerda3;
+        
+        /// <summary>
+        /// litSinopseNoticiaCentraEsquerda3 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Literal litSinopseNoticiaCentraEsquerda3;
+        
+        /// <summary>
+        /// imgBannerCentral control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Image imgBannerCentral;
+        
+        /// <summary>
+        /// litTituloNoticiaDestaqueDireita control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Literal litTituloNoticiaDestaqueDireita;
+        
+        /// <summary>
+        /// litSinopseNoticiaDestaqueDireita control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Literal litSinopseNoticiaDestaqueDireita;
+        
+        /// <summary>
+        /// lnkLeiaMaisNoticiaDestaqueDireita control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.LinkButton lnkLeiaMaisNoticiaDestaqueDireita;
+        
+        /// <summary>
+        /// lnkNoticiaCentralDireita1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.LinkButton lnkNoticiaCentralDireita1;
+        
+        /// <summary>
+        /// imgNoticiaCentralDireita1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Image imgNoticiaCentralDireita1;
+        
+        /// <summary>
+        /// litTituloNoticiaCentralDireita1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Literal litTituloNoticiaCentralDireita1;
+        
+        /// <summary>
+        /// litSinopseNoticiaCentralDireita1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Literal litSinopseNoticiaCentralDireita1;
+        
+        /// <summary>
+        /// lnkNoticiaCentralDireita2 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.LinkButton lnkNoticiaCentralDireita2;
+        
+        /// <summary>
+        /// imgNoticiaCentralDireita2 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Image imgNoticiaCentralDireita2;
+        
+        /// <summary>
+        /// litTituloNoticiaCentralDireita2 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Literal litTituloNoticiaCentralDireita2;
+        
+        /// <summary>
+        /// litSinopseNoticiaCentralDireita2 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Literal litSinopseNoticiaCentralDireita2;
+        
+        /// <summary>
+        /// lnkNoticiaCentralDireita3 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.LinkButton lnkNoticiaCentralDireita3;
+        
+        /// <summary>
+        /// imgNoticiaCentralDireita3 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Image imgNoticiaCentralDireita3;
+        
+        /// <summary>
+        /// litTituloNoticiaCentralDireita3 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Literal litTituloNoticiaCentralDireita3;
+        
+        /// <summary>
+        /// litSinopseNoticiaCentralDireita3 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Literal litSinopseNoticiaCentralDireita3;
+        
+        /// <summary>
+        /// lnkNoticiaCentralDireita4 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.LinkButton lnkNoticiaCentralDireita4;
+        
+        /// <summary>
+        /// imgNoticiaCentralDireita4 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Image imgNoticiaCentralDireita4;
+        
+        /// <summary>
+        /// litTituloNoticiaCentralDireita4 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Literal litTituloNoticiaCentralDireita4;
+        
+        /// <summary>
+        /// litSinopseNoticiaCentralDireita4 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Literal litSinopseNoticiaCentralDireita4;
+        
+        /// <summary>
+        /// rptVideosInteressantes control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Repeater rptVideosInteressantes;
         
         /// <summary>
         /// rptPromocoes control.
@@ -74,6 +371,42 @@ namespace CirculoNegocios.Web {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Repeater rptPromocoes;
+        
+        /// <summary>
+        /// litTituloNoticiaLateralDireita control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Literal litTituloNoticiaLateralDireita;
+        
+        /// <summary>
+        /// litSinopseNoticiaLateralDireita control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Literal litSinopseNoticiaLateralDireita;
+        
+        /// <summary>
+        /// lnkLerMaisNoticiaLateralDireita control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.LinkButton lnkLerMaisNoticiaLateralDireita;
+        
+        /// <summary>
+        /// rptBannerLateralDireita control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Repeater rptBannerLateralDireita;
         
         /// <summary>
         /// rptBannerInferiorEsquerdo control.

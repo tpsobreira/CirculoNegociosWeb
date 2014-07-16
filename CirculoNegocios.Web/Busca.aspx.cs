@@ -70,24 +70,33 @@ namespace CirculoNegocios.Web
                 lstClintes = clienteBusiness.ConsultaClientesByTextoBusca(estado, textoBusca);
             else
                 lstClintes = clienteBusiness.ConsultaClientesBySubCategoria(idSubCategoria, estado);
-            
-            PagedDataSource Pgs = new PagedDataSource();
-            Pgs.AllowPaging = true; //Seta paginação no PagedDataSource
-            Pgs.DataSource = lstClintes; // No caso, está setando como datasource o um objeto mas pode ser por exemplo, um DataSet.
-            Pgs.PageSize = 10; //Número de registros por página
-            
-            if (PaginaAtual >= Pgs.PageCount)
-                PaginaAtual--;
-            else if (PaginaAtual < 0)
-                PaginaAtual++;
+
+            if (lstClintes.Count > 0)
+            {
+                PagedDataSource Pgs = new PagedDataSource();
+                Pgs.AllowPaging = true; //Seta paginação no PagedDataSource
+                Pgs.DataSource = lstClintes; // No caso, está setando como datasource o um objeto mas pode ser por exemplo, um DataSet.
+                Pgs.PageSize = 10; //Número de registros por página
+
+                if (PaginaAtual >= Pgs.PageCount)
+                    PaginaAtual--;
+                else if (PaginaAtual < 0)
+                    PaginaAtual++;
+                else
+                {
+                    Pgs.CurrentPageIndex = PaginaAtual;
+                    rptResultado.DataSource = Pgs;
+                    rptResultado.DataBind();
+
+                    PreencheBreadCrumb(Convert.ToInt32(lstClintes[0].idCategoriaCliente), lstClintes[0].nomeCategoria, lstClintes[0].estado);
+                }    
+            }
             else
             {
-                Pgs.CurrentPageIndex = PaginaAtual;
-                rptResultado.DataSource = Pgs;
-                rptResultado.DataBind();
-
-                PreencheBreadCrumb(Convert.ToInt32(lstClintes[0].idCategoriaCliente), lstClintes[0].nomeCategoria, lstClintes[0].estado);
+                Alert("Não foram encontrados clientes!");
             }
+
+            
         }
 
         protected void lnkProximo_Click(object sender, EventArgs e)
@@ -100,6 +109,16 @@ namespace CirculoNegocios.Web
         {
             PaginaAtual--;
             GetData();
+        }
+
+        private void Alert(string mensagem)
+        {
+            ScriptManager.RegisterClientScriptBlock(Page, Page.GetType(), Guid.NewGuid().ToString(), "alert('" + mensagem + "');", true);
+        }
+
+        protected void btnFiltrar_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
