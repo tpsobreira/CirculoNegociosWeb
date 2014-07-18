@@ -6,6 +6,7 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using CirculoNegocios.Business;
 using CirculoNegocios.Entity;
+using System.Web.UI.HtmlControls;
 
 namespace CirculoNegocios.Web
 {
@@ -45,8 +46,6 @@ namespace CirculoNegocios.Web
                 ImgCliente2.ImageUrl = System.Configuration.ConfigurationManager.AppSettings["NavigateUrlImagens"].ToString() + cliente.anexoImagem2Path.ToString().Substring(cliente.anexoImagem2Path.LastIndexOf("ImgClientes"), cliente.anexoImagem2Path.Length - cliente.anexoImagem2Path.LastIndexOf("ImgClientes"));
 
                 ImgCliente3.ImageUrl = System.Configuration.ConfigurationManager.AppSettings["NavigateUrlImagens"].ToString() + cliente.anexoImagem3Path.ToString().Substring(cliente.anexoImagem3Path.LastIndexOf("ImgClientes"), cliente.anexoImagem3Path.Length - cliente.anexoImagem3Path.LastIndexOf("ImgClientes"));
-                
-
             }
         }
     }

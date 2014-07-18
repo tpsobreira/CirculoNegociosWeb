@@ -22,3 +22,12 @@ D:\Projetos\CirculoNegocios\CirculoNegociosWeb\CirculoNegocios.DAL\bin\Debug\Cir
 D:\Projetos\CirculoNegocios\CirculoNegociosWeb\CirculoNegocios.DAL\obj\Debug\CirculoNegocios.DAL.csprojResolveAssemblyReference.cache
 D:\Projetos\CirculoNegocios\CirculoNegociosWeb\CirculoNegocios.DAL\obj\Debug\CirculoNegocios.DAL.dll
 D:\Projetos\CirculoNegocios\CirculoNegociosWeb\CirculoNegocios.DAL\obj\Debug\CirculoNegocios.DAL.pdb
+C:\Users\macousa\Documents\GitHub\CirculoNegociosWeb\CirculoNegocios.DAL\bin\Debug\CirculoNegocios.DAL.dll
+C:\Users\macousa\Documents\GitHub\CirculoNegociosWeb\CirculoNegocios.DAL\bin\Debug\CirculoNegocios.DAL.pdb
+C:\Users\macousa\Documents\GitHub\CirculoNegociosWeb\CirculoNegocios.DAL\bin\Debug\CirculoNegocios.DB.dll
+C:\Users\macousa\Documents\GitHub\CirculoNegociosWeb\CirculoNegocios.DAL\bin\Debug\CirculoNegocios.Entity.dll
+C:\Users\macousa\Documents\GitHub\CirculoNegociosWeb\CirculoNegocios.DAL\bin\Debug\CirculoNegocios.DB.pdb
+C:\Users\macousa\Documents\GitHub\CirculoNegociosWeb\CirculoNegocios.DAL\bin\Debug\CirculoNegocios.Entity.pdb
+C:\Users\macousa\Documents\GitHub\CirculoNegociosWeb\CirculoNegocios.DAL\obj\Debug\CirculoNegocios.DAL.csprojResolveAssemblyReference.cache
+C:\Users\macousa\Documents\GitHub\CirculoNegociosWeb\CirculoNegocios.DAL\obj\Debug\CirculoNegocios.DAL.dll
+C:\Users\macousa\Documents\GitHub\CirculoNegociosWeb\CirculoNegocios.DAL\obj\Debug\CirculoNegocios.DAL.pdb
