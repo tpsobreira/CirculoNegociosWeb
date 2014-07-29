@@ -3,27 +3,21 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="utf-8">
     <title>Círculo de Negócios</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="n/a" />
-    <meta name="author" content="Marcio Coutinho" />
-    <link href="css/bootstrap.min.css" rel="stylesheet" />
-    <link href="css/style.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="n/a">
+    <meta name="author" content="Marcio Coutinho">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
-    <script src="/js/html5shiv.js" type="text/javascript"></script>
-    <script src="/js/respond.min.js" type="text/javascript"></script>
-    <style type="text/css">
-        .container {display: table;width: 100%;}
-        .row {height: 100%;display: table-row;}
-        .col-sm-4 {display: table-cell;}   
-    </style>
-    <![endif]-->
+    <script src="js/html5shiv.js"></script>
+  <![endif]-->
+    <!-- Fav and touch icons -->
     <script type="text/javascript" src="js/jquery.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/scripts.js"></script>
-
     <script type="text/javascript">
         function timer() {
             var d = new Date();
@@ -53,7 +47,7 @@
                 campo.value = campo.defaultValue;
             }
         }
-
+    
         function initialize() {
             var secheltLoc = new google.maps.LatLng(-23.6108174, -46.6379595, 17);
 
@@ -103,64 +97,66 @@
             ib.open(theMap, marker);
         }
 
-        function principal() {
+        function principal()
+        {
             timer();
             initialize();
         }
     </script>
+
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
 </head>
 <body onload="principal()">
     <form id="form1" runat="server">
-        <div>
-            <div class="container">
-                <div class="row clearfix">
-                    <div class="col-md-12 column">
-                        <div>
-                            <table width="100%">
-                                <tr>
-                                    <td>
-                                        <a href="Home.aspx">
-                                            <img style="margin-top: 40px; margin-bottom: 10px; margin-left: 60px;" class="center-block"
-                                                src="img/logo5.png" alt="logo" /></a>
-                                    </td>
-                                    <td>
-                                        <div style="text-align: right; margin-bottom: 25px; margin-right: 25px;">
-                                            <img src="img/identidade.png" style="width: 20px; height: 20px" alt="" />
-                                            <img src="img/facebook.png" alt="" />
-                                        </div>
-                                        <div id="date" class="data">
-                                        </div>
-                                        <div class="navbar navbar-default" role="navigation">
-                                            <ul class="nav navbar-nav navbar-left">
-                                                <li style="margin: 15px 0px 0px 10px;">Procuro por:</li>
-                                                <li>
-                                                    <div class="navbar-form navbar-left" role="search">
-                                                        <div class="form-group">
-                                                            <asp:TextBox runat="server" ID="txtBuscaServicos" Text="O que você procura?" onfocus="limpar(this);"
-                                                                onblur="escrever(this);" class="form-control" />
-                                                        </div>
+    <div>
+        <div class="container">
+            <div class="row clearfix">
+                <div class="col-md-12 column">
+                    <div>
+                        <table width="100%">
+                            <tr>
+                                <td>
+                                    <a href="Home.aspx">
+                                        <img style="margin-top: 40px; margin-bottom: 10px; margin-left: 60px;" class="center-block"
+                                            src="img/logo5.png" alt="logo" /></a>
+                                </td>
+                                <td>
+                                    <div style="text-align: end; margin-bottom: 25px; margin-right: 25px;">
+                                        <img src="img/identidade.png" style="width: 20px; height: 20px" alt="" />
+                                        <img src="img/facebook.png" alt="" />
+                                    </div>
+                                    <div id="date" class="data">
+                                    </div>
+                                    <div class="navbar navbar-default" role="navigation">
+                                        <ul class="nav navbar-nav navbar-left">
+                                            <li style="margin: 15px 0px 0px 10px;">Procuro por:</li>
+                                            <li>
+                                                <div class="navbar-form navbar-left" role="search">
+                                                    <div class="form-group">
+                                                        <asp:TextBox runat="server" ID="txtBuscaServicos" Text="O que você procura?" onfocus="limpar(this);"
+                                                            onblur="escrever(this);" class="form-control" />
                                                     </div>
-                                                </li>
-                                                <li style="text-align: center; margin: 15px 0px 0px 0px;">onde</li>
-                                                <li style="text-align: center; margin: 7px 0px 0px 10px;">
-                                                    <asp:DropDownList ID="ddlEstado" runat="server" class="btn btn-default" contenteditable="true">
-                                                        <asp:ListItem Selected="True" Text="Estado" Value="">Estado</asp:ListItem>
-                                                    </asp:DropDownList>
-                                                </li>
-                                                <li style="text-align: center; margin: 7px 10px 0px 10px;">
-                                                    <asp:Button runat="server" ID="btnPesquisar" class="btn btn-default" Text="Pesquisar"
-                                                        OnClick="btnPesquisar_Click" /></li>
-                                            </ul>
-                                        </div>
-                                    </td>
-                                </tr>
-                            </table>
-                        </div>
-                        <!--http://tutzstyle.com/wp-content/uploads/2013/11/conversao-dolar.html-->
-                        <div id="Mticker">
-                            <section class="barra-ticker pg-bgcolor3 mod">
+                                                </div>
+                                            </li>
+                                            <li style="text-align: center; margin: 15px 0px 0px 0px;">onde</li>
+                                            <li style="text-align: center; margin: 7px 0px 0px 10px;">
+                                                <asp:DropDownList ID="ddlEstado" runat="server" class="btn btn-default" contenteditable="true">
+                                                    <asp:ListItem Selected="True" Text="Estado" Value="">Estado</asp:ListItem>
+                                                </asp:DropDownList>
+                                            </li>
+                                            <li style="text-align: center; margin: 7px 10px 0px 10px;">
+                                                <asp:Button runat="server" ID="btnPesquisar" class="btn btn-default" Text="Pesquisar"
+                                                    OnClick="btnPesquisar_Click" /></li>
+                                        </ul>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <!--http://tutzstyle.com/wp-content/uploads/2013/11/conversao-dolar.html-->
+                    <div id="Mticker">
+                        <section class="barra-ticker pg-bgcolor3 mod">
                         <div id="bolsas">
                             <h2 class="pg-bgcolor4"><a href="http://economia.uol.com.br/cotacoes/bolsas/" class="cl_white">Bolsas</a> <span class="pg-sprites1 seta"></span></h2>
                             <ul>
@@ -188,9 +184,9 @@
                             </ul>
                         </div>
                     </section>
-                        </div>
-                        <br />
-                        <nav class="navbar navbar-default" role="navigation">
+                    </div>
+                    <br />
+                    <nav class="navbar navbar-default" role="navigation">
                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                         <ul class="nav navbar-nav">
                             <li class="active"><a href="Home.aspx">Home</a></li>
@@ -201,23 +197,25 @@
                         </ul>
                     </div>
                 </nav>
-                        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
-                        </asp:ContentPlaceHolder>
-                    </div>
-                    <div id="footer">
-                        <div class="copyright">
-                            <i class="sprite-selos sprite-selos-uol logouol">Circulo de Negócios</i> <span class="p1">© 2014 - O melhor conteúdo. Todos os direitos reservados
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                </div>
+                <div id="footer">
+                    <div class="copyright">
+                        <i class="sprite-selos sprite-selos-uol logouol">Circulo de Negócios</i> <span class="p1">
+                            © 2014 - O melhor conteúdo. Todos os direitos reservados
                             <%--<a href="#">Hospedagem
                                 Host</a>--%></span>
-                            <div class="bts">
-                                <a href="#" id="btCrimesVirtuais">Crimes virtuais: denuncie</a> <span>|</span> <a
-                                    href="#" id="btErratas">Erratas</a> <span>|</span> <a id="btComunicarErro" href="#">Comunicar erro</a>
-                            </div>
+                        <div class="bts">
+                            <a href="#" id="btCrimesVirtuais">Crimes virtuais: denuncie</a> <span>|</span> <a
+                                href="#" id="btErratas">Erratas</a> <span>|</span> <a id="btComunicarErro" href="#">
+                                    Comunicar erro</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
     </form>
 </body>
 </html>
