@@ -68,6 +68,7 @@
   <ItemGroup>
     <Content Include="AnuncieConosco.aspx" />
     <Content Include="AnuncieConosco.html" />
+    <Content Include="AnuncieProv.aspx" />
     <Content Include="Busca.aspx" />
     <Content Include="Categorias.aspx" />
     <Content Include="Categorias.html" />
@@ -174,6 +175,13 @@
     </Compile>
     <Compile Include="AnuncieConosco.aspx.designer.cs">
       <DependentUpon>AnuncieConosco.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AnuncieProv.aspx.cs">
+      <DependentUpon>AnuncieProv.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AnuncieProv.aspx.designer.cs">
+      <DependentUpon>AnuncieProv.aspx</DependentUpon>
     </Compile>
     <Compile Include="Busca.aspx.cs">
       <DependentUpon>Busca.aspx</DependentUpon>
@@ -301,7 +309,7 @@
         <WebProjectProperties>
           <UseIIS>False</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>1089</DevelopmentServerPort>
+          <DevelopmentServerPort>1754</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
           <IISUrl>
           </IISUrl>

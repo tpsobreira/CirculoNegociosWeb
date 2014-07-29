@@ -193,7 +193,7 @@
                 <!-- UOLLLLL -->
                 <div class="horizontalFixo fixoProdutos">
                     <h3>
-                        <b>Vídeos Interessantes</b></h3>
+                        <b>Em breve Vídeos Interessantes...</b></h3>
                     <ul class="produtos">
                         <asp:Repeater ID="rptVideosInteressantes" runat="server">
                             <HeaderTemplate>

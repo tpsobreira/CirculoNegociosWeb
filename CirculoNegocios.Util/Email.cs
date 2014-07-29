@@ -27,9 +27,9 @@ namespace CirculoNegocios.Util
                 // cria uma mensagem
                 MailMessage mensagemEmail = new MailMessage(Remetente, Destinatario, Assunto, body);
 
-                SmtpClient client = new SmtpClient("smtp.gmail.com", 587);
+                SmtpClient client = new SmtpClient("mail.circulodenegocios.com.br", 587);
                 client.EnableSsl = true;
-                NetworkCredential cred = new NetworkCredential("testeL@gmail.com", "teste");
+                NetworkCredential cred = new NetworkCredential("tiago@circulodenegocios.com.br", "Circulo2014");
                 client.Credentials = cred;
 
                 // inclui as credenciais

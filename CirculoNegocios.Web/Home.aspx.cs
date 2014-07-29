@@ -340,6 +340,9 @@ namespace CirculoNegocios.Web
                     case "MINAS GERAIS":
                         Session["UF"] = "MG";
                         break;
+                    default:
+                        Session["UF"] = "SP";
+                        break;
 
                 }
 

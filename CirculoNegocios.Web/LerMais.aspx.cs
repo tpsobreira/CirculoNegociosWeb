@@ -21,6 +21,8 @@ namespace CirculoNegocios.Web
 
                 var noticia = noticiaBusiness.ConsultaNoticiaById(idNoticia);
 
+                string descricao = noticia.Descricao.Replace("[Paragrafo", "<br />");
+
                 litDescricaoNoticia.Text = noticia.Descricao;
                 litTituloNoticia.Text = noticia.titulo;
 
