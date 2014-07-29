@@ -71,19 +71,18 @@
     <Content Include="AnuncieProv.aspx" />
     <Content Include="Busca.aspx" />
     <Content Include="Categorias.aspx" />
-    <Content Include="Categorias.html" />
     <Content Include="Contato.aspx" />
-    <Content Include="Contato.html" />
     <Content Include="css\bootstrap-theme.css" />
     <Content Include="css\bootstrap-theme.min.css" />
     <Content Include="css\bootstrap.css" />
     <Content Include="css\bootstrap.min.css" />
+    <Content Include="css\LoginCss.css" />
     <Content Include="css\style.css" />
-    <Content Include="CustomPage1.html" />
     <Content Include="DetalheCliente.aspx" />
     <Content Include="email\HtmlPage1.html" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Home.aspx" />
+    <Content Include="img\bg.gif" />
     <Content Include="img\facebook.png" />
     <Content Include="img\favicon.png" />
     <Content Include="img\identidade.png" />
@@ -137,16 +136,18 @@
     <Content Include="js\assets\js\jquery-1.8.1.min.js" />
     <Content Include="js\assets\js\jquery.video-ui.js" />
     <Content Include="js\bootstrap.min.js" />
+    <Content Include="js\ChunkFive_400.font.js" />
+    <Content Include="js\cufon-yui.js" />
     <Content Include="js\html5shiv.js" />
     <Content Include="js\infobox.js" />
     <Content Include="js\jquery.min.js" />
     <Content Include="js\less-1.3.3.min.js" />
     <Content Include="js\scripts.js" />
     <Content Include="LerMais.aspx" />
-    <Content Include="LerMais.html" />
+    <Content Include="Login\forgot_password.html" />
+    <Content Include="Login\index.html" />
+    <Content Include="Login\register.html" />
     <Content Include="QuemSomos.aspx" />
-    <Content Include="QuemSomos.html" />
-    <Content Include="ResultadoBusca.html" />
     <Content Include="Scripts\jquery-1.4.1-vsdoc.js" />
     <Content Include="Scripts\jquery-1.4.1.js" />
     <Content Include="Scripts\jquery-1.4.1.min.js" />
@@ -218,7 +219,6 @@
     <Compile Include="Contato.aspx.designer.cs">
       <DependentUpon>Contato.aspx</DependentUpon>
     </Compile>
-    <Compile Include="ControlType.cs" />
     <Compile Include="DetalheCliente.aspx.cs">
       <DependentUpon>DetalheCliente.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
