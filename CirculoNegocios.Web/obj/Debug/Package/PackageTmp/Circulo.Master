@@ -47,11 +47,67 @@
                 campo.value = campo.defaultValue;
             }
         }
+    
+        function initialize() {
+            var secheltLoc = new google.maps.LatLng(-23.6108174, -46.6379595, 17);
+
+            var myMapOptions = {
+                zoom: 15
+                , center: secheltLoc
+                , mapTypeId: google.maps.MapTypeId.ROADMAP
+            };
+            var theMap = new google.maps.Map(document.getElementById("map_canvas"), myMapOptions);
+
+
+            var marker = new google.maps.Marker({
+                map: theMap,
+                draggable: true,
+                position: new google.maps.LatLng(-23.6108174, -46.6379595, 17),
+                visible: true
+            });
+
+            var boxText = document.createElement("div");
+            boxText.style.cssText = "border:2px solid #FFF; margin-top: 8px;background:#FFF;color:#000;font-family:Arial, Helvetica, sans-serif;font-size:12px;padding: .5em 1em;-webkit-border-radius: 2px;-moz-border-radius: 2px;border-radius: 2px;text-shadow:0 -1p;-webkit-box-shadow: 0 0  8px;box-shadow: 0 0 8px;";
+            boxText.innerHTML = "Shopping da Praça - Loja 57 - 58";
+
+            var myOptions = {
+                content: boxText
+                , disableAutoPan: false
+                , maxWidth: 0
+                , pixelOffset: new google.maps.Size(-140, 0)
+                , zIndex: null
+                , boxStyle: {
+                    background: "url('tipbox.gif') no-repeat"
+                  , opacity: 0.75
+                  , width: "260px"
+                }
+                , closeBoxMargin: "10px 2px 2px 2px"
+                , closeBoxURL: "http://www.google.com/intl/en_us/mapfiles/close.gif"
+                , infoBoxClearance: new google.maps.Size(1, 1)
+                , isHidden: false
+                , pane: "floatPane"
+                , enableEventPropagation: false
+            };
+
+            google.maps.event.addListener(marker, "click", function (e) {
+                ib.open(theMap, this);
+            });
+
+            var ib = new InfoBox(myOptions);
+            ib.open(theMap, marker);
+        }
+
+        function principal()
+        {
+            timer();
+            initialize();
+        }
     </script>
+
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
 </head>
-<body onload="timer()">
+<body onload="principal()">
     <form id="form1" runat="server">
     <div>
         <div class="container">
