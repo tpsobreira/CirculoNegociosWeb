@@ -1,5 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Circulo.Master" AutoEventWireup="true"
-    CodeBehind="Contato.aspx.cs" Inherits="CirculoNegocios.Web.Contato" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Circulo.Master" AutoEventWireup="true" CodeBehind="Contato.aspx.cs" Inherits="CirculoNegocios.Web.Contato" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
      <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>

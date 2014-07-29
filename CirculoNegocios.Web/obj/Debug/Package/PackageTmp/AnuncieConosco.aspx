@@ -12,9 +12,9 @@
         <div class="tabbable" id="tabs-623579">
             <ul class="nav nav-tabs">
                 <li class="active"><a href="#panel-566275" data-toggle="tab">Seus dados</a> </li>
-                <li><a href="#panel-605862" data-toggle="tab">Dados de sua empresa</a> </li>
-                <li><a href="#panel-605863" data-toggle="tab">Informações 1° página</a> </li>
-                <li><a href="#panel-605864" data-toggle="tab">Informações 2° página</a> </li>
+                <li><a href="#panel-605862" data-toggle="tab">Dados do seu Negócio</a> </li>
+                <li><a href="#panel-605863" data-toggle="tab">Informações da sua Página Personalizada</a> </li>
+                <%--<li><a href="#panel-605864" data-toggle="tab">Informações 2° página</a> </li>--%>
                 <li><a href="#panel-605865" data-toggle="tab">Pagamento</a> </li>
             </ul>
             <div class="tab-content">
@@ -189,7 +189,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="tab-pane" id="panel-605864">
+                <%--<div class="tab-pane" id="panel-605864">
                     <div id="passo4" class="formAnuncio">
                         <h2 class="alert-warning">
                             Informações - segunda página</h2>
@@ -255,7 +255,7 @@
                             </form>
                         </div>
                     </div>
-                </div>
+                </div>--%>
                 <div class="tab-pane" id="panel-605865">
                     <div id="passo5" class="formAnuncio">
                         <h2 class="alert-warning">

@@ -91,23 +91,21 @@
                     <div class="col-md-7 column" style="margin-top: 10px">
                         <%--Noticia Central Esquerda 1--%>
                         <div class="media">
-                            <asp:LinkButton ID="lnkNoticiaCentralEsquerda1" OnClick="lnkNoticiaCentralEsquerda1_Click" runat="server">
-                                <asp:Image ID="ImgNoticiaCentralEsquerda1" CssClass="media-object" runat="server"
-                                    Width="80px" Height="80px" /></asp:LinkButton>
+                            <asp:LinkButton ID="lnkNoticiaCentralEsquerda1" OnClick="lnkNoticiaCentralEsquerda1_Click" runat="server" class="pull-left">
+                                <asp:Image ID="ImgNoticiaCentralEsquerda1" CssClass="media-object" runat="server" Width="90px" Height="80px" />
+                            </asp:LinkButton>
                             <div class="media-body">
-                                <h4 class="media-heading" style="color: red; font-family: 'Trebuchet MS'; font-size: 16px;">
-                                    -
+                                <h4 class="media-heading" style="color: red; font-family: 'Trebuchet MS'; font-size: 16px;">-
                                     <asp:Literal ID="litTituloNoticiaCentraEsquerda1" runat="server"></asp:Literal></h4>
-                                <p style="font-size: 12px">
-                                    <asp:Literal ID="litSinopseNoticiaCentraEsquerda1" runat="server"></asp:Literal></p>
+                                <p style="font-size: 12px"><asp:Literal ID="litSinopseNoticiaCentraEsquerda1" runat="server"></asp:Literal></p>
                             </div>
                         </div>
                         <hr />
                         <%--Noticia Central Esquerda 2--%>
                         <div class="media">
-                            <asp:LinkButton ID="lnkNoticiaCentralEsquerda2" OnClick="lnkNoticiaCentralEsquerda2_Click" runat="server">
+                            <asp:LinkButton ID="lnkNoticiaCentralEsquerda2" OnClick="lnkNoticiaCentralEsquerda2_Click" runat="server" class="pull-left">
                                 <asp:Image ID="ImgNoticiaCentralEsquerda2" CssClass="media-object" runat="server"
-                                    Width="142px" Height="100px" /></asp:LinkButton>
+                                    Width="90px" Height="80px" /></asp:LinkButton>
                             <div class="media-body">
                                 <h4 class="media-heading" style="color: red; font-family: 'Trebuchet MS'; font-size: 16px;">
                                     -
@@ -119,15 +117,15 @@
                         <hr />
                         <%--Noticia Central Esquerda 3--%>
                         <div class="media">
-                            <asp:LinkButton ID="lnkNoticiaCentralEsquerda3" OnClick="lnkNoticiaCentralEsquerda3_Click" runat="server">
+                            <asp:LinkButton ID="lnkNoticiaCentralEsquerda3" OnClick="lnkNoticiaCentralEsquerda3_Click" runat="server" class="pull-left">
                             <asp:Image ID="ImgNoticiaCentralEsquerda3" CssClass="media-object" runat="server"
-                                Width="80px" Height="80px" /></asp:LinkButton>
+                                Width="90px" Height="80px" /></asp:LinkButton>
                             <div class="media-body">
-                                <h4 class="media-heading" style="color: red; font-family: 'Trebuchet MS'; font-size: 16px;">
-                                    -
+                                <h4 class="media-heading" style="color: red; font-family: 'Trebuchet MS'; font-size: 16px;">-
                                     <asp:Literal ID="litTituloNoticiaCentraEsquerda3" runat="server"></asp:Literal></h4>
                                 <p style="font-size: 12px">
-                                    <asp:Literal ID="litSinopseNoticiaCentraEsquerda3" runat="server"></asp:Literal></p>
+                                    <asp:Literal ID="litSinopseNoticiaCentraEsquerda3" runat="server"></asp:Literal>
+                                </p>
                             </div>
                         </div>
                         <br />
@@ -150,8 +148,7 @@
                     <%--NOTICIAS CENTRAL DIREITO (4 NOTICIAS)--%>
                     <div class="col-md-5 column">
                         <div style="width: 95px; float: left;">
-                            <asp:LinkButton ID="lnkNoticiaCentralDireita1" OnClick="lnkNoticiaCentralDireita1_Click"
-                                runat="server">
+                            <asp:LinkButton ID="lnkNoticiaCentralDireita1" OnClick="lnkNoticiaCentralDireita1_Click" runat="server">
                                 <asp:Image ID="imgNoticiaCentralDireita1" Width="95px" Height="70px" runat="server" />
                                 <h4 class="media-heading" style="color: red; font-family: 'Trebuchet MS'; font-size: 14px;">
                                     <asp:Literal ID="litTituloNoticiaCentralDireita1" runat="server"></asp:Literal></h4>
@@ -162,8 +159,7 @@
                         <div style="width: 15px; float: left;">
                             &nbsp</div>
                         <div style="width: 95px; float: left;">
-                            <asp:LinkButton ID="lnkNoticiaCentralDireita2" OnClick="lnkNoticiaCentralDireita2_Click"
-                                runat="server">
+                            <asp:LinkButton ID="lnkNoticiaCentralDireita2" OnClick="lnkNoticiaCentralDireita2_Click" runat="server">
                                 <asp:Image ID="imgNoticiaCentralDireita2" runat="server" Width="95px" Heigh="70px" />
                                 <h4 class="media-heading" style="color: red; font-family: 'Trebuchet MS'; font-size: 14px;">
                                     <asp:Literal ID="litTituloNoticiaCentralDireita2" runat="server"></asp:Literal></h4>
