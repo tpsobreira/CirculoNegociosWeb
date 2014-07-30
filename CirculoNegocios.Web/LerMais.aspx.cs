@@ -21,9 +21,11 @@ namespace CirculoNegocios.Web
 
                 var noticia = noticiaBusiness.ConsultaNoticiaById(idNoticia);
 
-                string descricao = noticia.Descricao.Replace("[Paragrafo", "<br />");
+                string descricao = noticia.Descricao.Replace("[PARAGRAFO]", "<br>");
 
-                litDescricaoNoticia.Text = noticia.Descricao;
+                litRodape2Foto.Text = noticia.Sinopse;
+
+                litDescricaoNoticia.Text = descricao;
                 litTituloNoticia.Text = noticia.titulo;
 
                 imgPrincipal.ImageUrl = System.Configuration.ConfigurationManager.AppSettings["NavigateUrlImagens"].ToString() + noticia.imagem1.ToString().Substring(noticia.imagem1.LastIndexOf("Noticias"), noticia.imagem1.ToString().Length - noticia.imagem1.ToString().LastIndexOf("Noticias"));

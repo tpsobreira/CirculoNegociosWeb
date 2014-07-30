@@ -28,7 +28,7 @@ namespace CirculoNegocios.Util
                 MailMessage mensagemEmail = new MailMessage(Remetente, Destinatario, Assunto, body);
 
                 SmtpClient client = new SmtpClient("mail.circulodenegocios.com.br", 587);
-                client.EnableSsl = true;
+                client.EnableSsl = false;
                 NetworkCredential cred = new NetworkCredential("tiago@circulodenegocios.com.br", "Circulo2014");
                 client.Credentials = cred;
 
