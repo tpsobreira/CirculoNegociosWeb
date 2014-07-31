@@ -124,7 +124,7 @@
                                 <td>
                                     <div style="text-align: end; margin-bottom: 25px; margin-right: 25px;">
                                         <img src="img/identidade.png" style="width: 20px; height: 20px" alt="" />
-                                        <img src="img/facebook.png" alt="" />
+                                        <a href="http://pt-br.facebook.com/pages/Círculo-de-Negócios/273450316154906" target="_blank"><img src="img/facebook.png" /></a> 
                                     </div>
                                     <div id="date" class="data">
                                     </div>
@@ -192,7 +192,7 @@
                             <li class="active"><a href="Home.aspx">Home</a></li>
                             <li><a href="QuemSomos.aspx">Quem somos</a></li>
                             <li><a href="Categorias.aspx">Categorias</a></li>
-                            <li><a href="AnuncieConosco.aspx">Anuncie conosco</a></li>
+                            <li><a href="AnuncieProv.aspx">Anuncie conosco</a></li>
                             <li><a href="Contato.aspx">Contato</a></li>
                         </ul>
                     </div>

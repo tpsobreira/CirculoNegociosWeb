@@ -62,15 +62,17 @@
                             </HeaderTemplate>
                             <ItemTemplate>
                                 <div class='<%#DataBinder.Eval(Container.DataItem,"ClassCssItem").ToString() %>'>
+                                    <a href='<%#string.Format(@"DetalheCliente.aspx?idCliente={0}", DataBinder.Eval(Container.DataItem,"idCliente").ToString()) %>'>
                                     <img width="1500px" height="600px" src='<%#System.Configuration.ConfigurationManager.AppSettings["NavigateUrlImagens"].ToString() + DataBinder.Eval(Container.DataItem,"imagemFilePath").ToString().Substring(DataBinder.Eval(Container.DataItem,"imagemFilePath").ToString().LastIndexOf("BannerPrincipal"), DataBinder.Eval(Container.DataItem,"imagemFilePath").ToString().Length - DataBinder.Eval(Container.DataItem,"imagemFilePath").ToString().LastIndexOf("BannerPrincipal")) %>' />
                                     <div class="carousel-caption">
                                         <h4>
                                             <asp:Literal ID="litTitulo" runat="server"></asp:Literal>
                                         </h4>
                                         <p>
-                                            <asp:Literal ID="litDescricao" runat="server" Text='<%#DataBinder.Eval(Container.DataItem,"Descricao").ToString() %>'></asp:Literal>
+                                            <asp:Literal ID="litDescricao" runat="server" Text='<%#DataBinder.Eval(Container.DataItem,"Descricao").ToString() %>' Visible="false"></asp:Literal>
                                         </p>
                                     </div>
+                                    </a>
                                 </div>
                             </ItemTemplate>
                         </asp:Repeater>
@@ -193,7 +195,7 @@
                 <!-- UOLLLLL -->
                 <div class="horizontalFixo fixoProdutos">
                     <h3>
-                        <b>Vídeos Interessantes</b></h3>
+                        <b>Em breve Vídeos Interessantes...</b></h3>
                     <ul class="produtos">
                         <asp:Repeater ID="rptVideosInteressantes" runat="server">
                             <HeaderTemplate>
