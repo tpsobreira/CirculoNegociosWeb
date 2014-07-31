@@ -10,3 +10,9 @@ D:\Projetos\CirculoNegocios\CirculoNegociosWeb\CirculoNegocios.DB\bin\Debug\Circ
 D:\Projetos\CirculoNegocios\CirculoNegociosWeb\CirculoNegocios.DB\obj\Debug\CirculoNegocios.DB.csprojResolveAssemblyReference.cache
 D:\Projetos\CirculoNegocios\CirculoNegociosWeb\CirculoNegocios.DB\obj\Debug\CirculoNegocios.DB.dll
 D:\Projetos\CirculoNegocios\CirculoNegociosWeb\CirculoNegocios.DB\obj\Debug\CirculoNegocios.DB.pdb
+C:\Users\macousa\Documents\GitHub\CirculoNegociosWeb\CirculoNegocios.DB\bin\Debug\CirculoNegocios.DB.dll.config
+C:\Users\macousa\Documents\GitHub\CirculoNegociosWeb\CirculoNegocios.DB\bin\Debug\CirculoNegocios.DB.dll
+C:\Users\macousa\Documents\GitHub\CirculoNegociosWeb\CirculoNegocios.DB\bin\Debug\CirculoNegocios.DB.pdb
+C:\Users\macousa\Documents\GitHub\CirculoNegociosWeb\CirculoNegocios.DB\obj\Debug\CirculoNegocios.DB.csprojResolveAssemblyReference.cache
+C:\Users\macousa\Documents\GitHub\CirculoNegociosWeb\CirculoNegocios.DB\obj\Debug\CirculoNegocios.DB.dll
+C:\Users\macousa\Documents\GitHub\CirculoNegociosWeb\CirculoNegocios.DB\obj\Debug\CirculoNegocios.DB.pdb
