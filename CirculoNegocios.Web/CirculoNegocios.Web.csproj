@@ -78,6 +78,7 @@
     <Content Include="css\bootstrap-theme.min.css" />
     <Content Include="css\bootstrap.css" />
     <Content Include="css\bootstrap.min.css" />
+    <Content Include="css\LoginCss.css" />
     <Content Include="css\style.css" />
     <Content Include="CustomPage1.html" />
     <Content Include="DetalheCliente.aspx" />
