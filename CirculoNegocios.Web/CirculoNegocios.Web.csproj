@@ -144,6 +144,7 @@
     <Content Include="js\scripts.js" />
     <Content Include="LerMais.aspx" />
     <Content Include="LerMais.html" />
+    <Content Include="Login\index.html" />
     <Content Include="QuemSomos.aspx" />
     <Content Include="QuemSomos.html" />
     <Content Include="ResultadoBusca.html" />
